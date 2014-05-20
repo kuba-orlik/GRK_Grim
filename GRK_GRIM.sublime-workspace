@@ -1,0 +1,917 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"color",
+				"color-dark"
+			],
+			[
+				"colo",
+				"color-light"
+			],
+			[
+				"list-stl",
+				"list-style-image:   (property)"
+			],
+			[
+				"displ",
+				"display-flex"
+			],
+			[
+				"disp",
+				"display-flex"
+			],
+			[
+				"ApiCac",
+				"ApiCacheNotationMatchResult  (class)"
+			],
+			[
+				"ApiCache",
+				"ApiCacheNotation  (class)"
+			],
+			[
+				"attri",
+				"attribute_names"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"rebuil",
+				"rebuildResultsJSON  (function)"
+			],
+			[
+				"total",
+				"total_duration  (variable)"
+			],
+			[
+				"getA",
+				"getAverageRepDuration"
+			],
+			[
+				"duration",
+				"duration_s"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"get",
+				"getLogEntries  (function)"
+			],
+			[
+				"negl",
+				"neglected_muscle_part  (variable)"
+			],
+			[
+				"of",
+				"neglected_muscle_offset"
+			],
+			[
+				"neg",
+				"neglected_muscle_offset"
+			],
+			[
+				"show",
+				"show_in_recom"
+			],
+			[
+				"avg_",
+				"avg_rep_duration"
+			],
+			[
+				"aver",
+				"avg_rep_duration"
+			],
+			[
+				"set",
+				"set_templates_amount  (variable)"
+			],
+			[
+				"resul",
+				"result_amount  (variable)"
+			],
+			[
+				"estima",
+				"estimated_reps"
+			],
+			[
+				"toal",
+				"total_exercise_time"
+			],
+			[
+				"est",
+				"estimated_total_rep_time  (variable)"
+			],
+			[
+				"bre",
+				"break_duration"
+			],
+			[
+				"set_te",
+				"set_templates_amount"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"javascritp",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"gru",
+				"Grunt"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"nistall",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Kuba Orlik/AppData/Local/Temp/fz3temp-1/header.php",
+		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-fields.html",
+		"/D/FTP Cache/INWATER - drupal/sftp-config.json",
+		"/C/Users/Kuba Orlik/Documents/Repos/pyDDP/server/temp_server.py",
+		"/C/Users/Kuba Orlik/Desktop/python temp/client.py",
+		"/C/Users/Kuba Orlik/Desktop/python temp/server.py",
+		"/C/Users/Kuba Orlik/Desktop/test.html",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/INWATER.info",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/templates/header.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/templates/page--front.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/templates/page.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/html.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/template.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/style.css",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/style.scss",
+		"/C/Users/Kuba Orlik/Desktop/Tutorial 0.3.8/Tut 05 Objects in Depth/DepthBuffer.cpp",
+		"/D/FTP Cache/INWATER - drupal/modules/image/image.info",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/tests/common_test_info.txt",
+		"/D/FTP Cache/INWATER - drupal/index.php",
+		"/D/FTP Cache/INWATER - drupal/modules/node/node.css",
+		"/D/FTP Cache/INWATER - drupal/includes/file.inc",
+		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-list.html",
+		"/D/FTP Cache/INWATER - drupal/modules/taxonomy/taxonomy.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/simpletest.css",
+		"/D/FTP Cache/INWATER - drupal/modules/shortcut/shortcut.css",
+		"/D/FTP Cache/INWATER - drupal/modules/search/search.css",
+		"/D/FTP Cache/INWATER - drupal/modules/profile/profile.css",
+		"/D/FTP Cache/INWATER - drupal/modules/poll/poll.css",
+		"/D/FTP Cache/INWATER - drupal/modules/openid/openid.css",
+		"/D/FTP Cache/INWATER - drupal/modules/menu/menu.css",
+		"/D/FTP Cache/INWATER - drupal/modules/locale/locale.css",
+		"/D/FTP Cache/INWATER - drupal/modules/image/image.css",
+		"/D/FTP Cache/INWATER - drupal/modules/help/help.css",
+		"/D/FTP Cache/INWATER - drupal/modules/forum/forum.css",
+		"/D/FTP Cache/INWATER - drupal/modules/filter/filter.css",
+		"/D/FTP Cache/INWATER - drupal/modules/file/file.css",
+		"/D/FTP Cache/INWATER - drupal/modules/dblog/dblog.css",
+		"/D/FTP Cache/INWATER - drupal/modules/dashboard/dashboard.css",
+		"/D/FTP Cache/INWATER - drupal/modules/contextual/contextual.css",
+		"/D/FTP Cache/INWATER - drupal/modules/comment/comment.css",
+		"/D/FTP Cache/INWATER - drupal/modules/color/color.css",
+		"/D/FTP Cache/INWATER - drupal/modules/book/book.css",
+		"/D/FTP Cache/INWATER - drupal/modules/block/block.css",
+		"/D/FTP Cache/INWATER - drupal/modules/aggregator/aggregator.css",
+		"/D/FTP Cache/INWATER - drupal/misc/farbtastic/farbtastic.css",
+		"/D/FTP Cache/INWATER - drupal/misc/print.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css.unoptimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css.optimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css.unoptimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css.optimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css.unoptimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css.optimized.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css",
+		"/D/FTP Cache/INWATER - drupal/modules/views/help/theme-css.html",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css",
+		"/D/FTP Cache/INWATER - drupal/CHANGELOG.txt",
+		"/D/FTP Cache/INWATER - drupal/themes/garland/style.css",
+		"/D/FTP Cache/INWATER - drupal/themes/seven/style.css",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/script.js",
+		"/C/Users/Kuba Orlik/Desktop/flex-test.html",
+		"/C/Users/Kuba Orlik/Desktop/CSS inject/script.js",
+		"/C/Users/Kuba Orlik/Desktop/CSS inject/manifest.json",
+		"/C/Users/Kuba Orlik/Desktop/CSS inject/config.html",
+		"/C/Users/Kuba Orlik/Desktop/CSS inject/classes.js",
+		"/C/Users/Kuba Orlik/Desktop/temp.js",
+		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-comment-rss.html",
+		"/D/FTP Cache/INWATER - drupal/.ftpquota",
+		"/D/FTP Cache/INWATER - drupal/themes/bartik/templates/node.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/slides/slides.css",
+		"/D/FTP Cache/INWATER - drupal/themes/bartik/templates/page.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/templates/block--system--main.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/slides/slideshow.js",
+		"/D/FTP Cache/INWATER - drupal/modules/comment/comment-node-form.js",
+		"/D/FTP Cache/INWATER - drupal/includes/pager.inc",
+		"/D/FTP Cache/INWATER - drupal/modules/views/plugins/views_plugin_style_grid.inc",
+		"/D/FTP Cache/INWATER - drupal/themes/garland/page.tpl.php",
+		"/D/FTP Cache/INWATER - drupal/themes/garland/template.php",
+		"/C/Users/Kuba Orlik/AppData/Roaming/Sublime Text 3/Packages/CSScomb JS/CSScomb JS.sublime-settings",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/inwater_theme.css",
+		"/D/FTP Cache/INWATER - drupal/INWATER - drupal.sublime-project",
+		"/D/FTP Cache/INWATER - drupal/web.config",
+		"/C/Users/Kuba Orlik/AppData/Roaming/Sublime Text 3/Packages/EasyDiff/easy_diff.sublime-settings",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/tests/session_test.info",
+		"/D/FTP Cache/INWATER - drupal/modules/views/plugins/views_plugin_access.inc",
+		"/D/FTP Cache/INWATER - drupal/includes/common.inc",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/template.html_temp",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/rmenu.js",
+		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/example_style.css",
+		"/D/FTP Cache/INWATER - drupal/modules/views/handlers/views_handler_sort_menu_hierarchy.inc",
+		"/D/FTP Cache/INWATER - drupal/modules/forum/forum-rtl.css",
+		"/D/FTP Cache/INWATER - drupal/modules/simpletest/tests/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info",
+		"/D/FTP Cache/INWATER - drupal/modules/views/handlers/views_handler_relationship_groupwise_max.inc",
+		"/D/FTP Cache/INWATER - drupal/README.txt",
+		"/C/FTP Cache/ikleks workout 2/temp.php",
+		"/C/Users/Kuba Orlik/Downloads/includes.php",
+		"/C/FTP Cache/ikleks workout 2/home.php",
+		"/D/Dropbox/Dump/Aspazja temp/post.html",
+		"/D/Dropbox/Dump/Aspazja temp/post.min.html",
+		"/D/Dropbox/Dump/Aspazja temp/footer_snippet_5.html",
+		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/footer_snippet.html",
+		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/post.min.html",
+		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/post.html",
+		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/backup.html",
+		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/New Text Document.txt",
+		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise_list.html",
+		"/C/FTP Cache/ikleks workout 2/classes/exercises.php",
+		"/C/Users/Kuba Orlik/Desktop/taski.txt",
+		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise.html",
+		"/C/FTP Cache/ikleks workout 2/controllers/ExercisesController.php",
+		"/C/FTP Cache/ikleks workout 2/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/zlib-browserify/zlib.js",
+		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise_go.html",
+		"/C/FTP Cache/ikleks workout 2/web/js/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/pics/profile_pictures/google/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/web/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/web/css/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/sftp-config.json",
+		"/C/FTP Cache/ikleks workout 2/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/api/.htaccess",
+		"/C/FTP Cache/ikleks workout 2/classes/PHPMailer/examples/styles/shThemeAppleScript.css",
+		"/C/FTP Cache/ikleks workout 2/node_modules/grunt/node_modules/hooker/test/hooker_test.js",
+		"/C/FTP Cache/ikleks workout 2/test.php",
+		"/C/FTP Cache/ikleks workout 2/package.json",
+		"/C/FTP Cache/ikleks workout 2/classes/logEntries.php",
+		"/C/FTP Cache/ikleks workout 2/classes/database.php",
+		"/C/FTP Cache/ikleks workout 2/Gruntfile.js",
+		"/C/FTP Cache/ikleks workout 2/web/js/coach.js",
+		"/C/FTP Cache/ikleks workout 2/pics/.htaccess"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\FTP Cache\\INWATER - drupal\\themes\\inwater",
+			"D:\\FTP Cache\\INWATER - drupal\\themes\\garland",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"renderenu",
+			"render",
+			"large",
+			"large-slideshow",
+			"leaf",
+			"roption",
+			"#header",
+			"left",
+			"duration",
+			"$page",
+			"region",
+			"slide",
+			"<div",
+			"slide",
+			"rmenu",
+			"unfolder",
+			"group",
+			"rmenu",
+			"unfolder",
+			"group",
+			"rmenu",
+			"roption",
+			"option",
+			"			<div>\n",
+			"group",
+			"unfolder",
+			"cache",
+			"    ",
+			": ",
+			"\\n",
+			"			<td>\n",
+			"		</button>\n",
+			"button",
+			"<button",
+			"button",
+			"<td>",
+			"endermolab",
+			"Endermolab",
+			"div_192",
+			"70px!impo",
+			"    ",
+			": ",
+			"\\n",
+			"div_8",
+			"    ",
+			": ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			"    ",
+			": ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			": ",
+			"    ",
+			"\\n",
+			"539",
+			": ",
+			"    ",
+			"\\n",
+			"539",
+			": ",
+			"    ",
+			"\\n",
+			"539",
+			": ",
+			"    ",
+			"\\n",
+			"539px",
+			": ",
+			"    ",
+			"\\n",
+			"1100px",
+			"; ",
+			": ",
+			"    ",
+			"\\n",
+			"(; |: )",
+			"(<style>.*) (.*</style>)",
+			"(\\<style\\>)",
+			"(?=\\<style\\>)",
+			"(?=<style>) ",
+			"(?=<style>)",
+			"(?=<style>.*) (.*</style>)",
+			"    ",
+			"\\n",
+			"to nie",
+			"\\n",
+			"h2",
+			"span",
+			"(?=\\<)span(?=\\>)",
+			"\\n",
+			"div_45",
+			"href",
+			"href=",
+			"javascript",
+			"powrót",
+			"(?=\\<)h2(?=\\>)",
+			"h2",
+			"H2",
+			"h2",
+			"0!im",
+			";",
+			"242px",
+			",",
+			"web",
+			"splice",
+			"exercise_go",
+			"input",
+			"result[^s]",
+			"[\"']result[\"']",
+			"family",
+			"Roboto"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			":",
+			"",
+			"Endermolab 2",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			":",
+			"",
+			"476",
+			":",
+			"",
+			"480",
+			":",
+			"",
+			"489",
+			":",
+			"",
+			"50%",
+			":",
+			"",
+			"100%",
+			";",
+			":",
+			"",
+			" ",
+			"",
+			"div class=\"as_header\"",
+			"",
+			"span",
+			"0"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 197.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 201.0
+	},
+	"project": "GRK_GRIM.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sft",
+				"sftp-config.json"
+			],
+			[
+				"ininfo",
+				"themes\\inwater\\INWATER.info"
+			],
+			[
+				"front",
+				"themes\\inwater\\templates\\page--front.tpl.php"
+			],
+			[
+				"style.cs",
+				"themes\\inwater\\style.css"
+			],
+			[
+				"style.css",
+				"themes\\inwater\\style.css"
+			],
+			[
+				"scss",
+				"themes\\inwater\\style.scss"
+			],
+			[
+				"style",
+				"themes\\inwater\\style.css"
+			],
+			[
+				"script",
+				"themes\\inwater\\script.js"
+			],
+			[
+				".scss",
+				"themes\\inwater\\style.scss"
+			],
+			[
+				"slide",
+				"themes\\inwater\\slides\\slides.css"
+			],
+			[
+				"stylecss",
+				"themes\\inwater\\style.css"
+			],
+			[
+				"inwainfo",
+				"themes\\inwater\\INWATER.info"
+			],
+			[
+				"style.scss",
+				"themes\\inwater\\style.scss"
+			],
+			[
+				"inwaterpgae",
+				"themes\\inwater\\templates\\page.tpl.php"
+			],
+			[
+				"inwatercss",
+				"themes\\inwater\\style.css"
+			],
+			[
+				"rmenucss",
+				"themes\\inwater\\responsive_menu\\inwater_theme.css"
+			],
+			[
+				"fron",
+				"themes\\inwater\\templates\\page--front.tpl.php"
+			],
+			[
+				"slideshow",
+				"themes\\inwater\\slides\\slideshow.js"
+			],
+			[
+				"rmenu",
+				"themes\\inwater\\responsive_menu\\rmenu.js"
+			],
+			[
+				"test",
+				"test.php"
+			],
+			[
+				"user",
+				"classes\\users.php"
+			],
+			[
+				"home.html",
+				"web\\html\\views\\home.html"
+			],
+			[
+				"exercises.ht",
+				"web\\html\\views\\exercise_list.html"
+			],
+			[
+				"exercises",
+				"classes\\exercises.php"
+			],
+			[
+				"exerhtml",
+				"web\\html\\views\\exercise.html"
+			],
+			[
+				"home",
+				"home.php"
+			],
+			[
+				"hta",
+				"pics\\.htaccess"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"exerci",
+				"classes\\exercises.php"
+			],
+			[
+				"data",
+				"classes\\database.php"
+			],
+			[
+				"logen",
+				"classes\\logEntries.php"
+			],
+			[
+				"home.h",
+				"web\\html\\views\\home.html"
+			],
+			[
+				"services",
+				"web\\js\\mvc\\services.js"
+			],
+			[
+				"controllers",
+				"web\\js\\mvc\\controllers.js"
+			],
+			[
+				"exerc",
+				"classes\\exercises.php"
+			],
+			[
+				"controll",
+				"web\\js\\mvc\\controllers.js"
+			],
+			[
+				"go",
+				"web\\html\\views\\exercise_go.html"
+			],
+			[
+				"exercise_history_preview",
+				"web\\html\\snippets\\exercise_history_preview.html"
+			],
+			[
+				"exercise.html",
+				"web\\html\\views\\exercise.html"
+			],
+			[
+				"log",
+				"controllers\\LogController.php"
+			],
+			[
+				"home.php",
+				"home.php"
+			],
+			[
+				"exec",
+				"controllers\\ExercisesController.php"
+			],
+			[
+				"home.",
+				"web\\html\\views\\home.html"
+			],
+			[
+				"dire",
+				"web\\js\\mvc\\directives.js"
+			],
+			[
+				"exer",
+				"web\\html\\views\\exercise.html"
+			],
+			[
+				"css",
+				"controllers\\Streak_statusController.php"
+			],
+			[
+				"main",
+				"web\\css\\main.css"
+			],
+			[
+				"main.",
+				"web\\css\\main.css"
+			],
+			[
+				"recom",
+				"controllers\\RecomController.php"
+			],
+			[
+				"controller",
+				"web\\js\\mvc\\controllers.js"
+			],
+			[
+				"directive",
+				"web\\js\\mvc\\directives.js"
+			],
+			[
+				"settemp",
+				"classes\\setTemplates.php"
+			],
+			[
+				"setre",
+				"classes\\setResults.php"
+			],
+			[
+				"muscl",
+				"classes\\muscleParts.php"
+			],
+			[
+				"muscle",
+				"classes\\muscleParts.php"
+			],
+			[
+				"logentr",
+				"classes\\logEntries.php"
+			],
+			[
+				"databaso",
+				"classes\\databaseObject.php"
+			],
+			[
+				"logs",
+				"classes\\logEntries.php"
+			],
+			[
+				"api.",
+				"api\\api.php"
+			],
+			[
+				"contro",
+				"web\\js\\mvc\\controllers.js"
+			],
+			[
+				"main.css",
+				"web\\css\\main.css"
+			],
+			[
+				"hoe",
+				"home.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"pydd",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\pyDDP.sublime-project"
+			],
+			[
+				"inwa",
+				"D:\\Dropbox\\Projects\\HTML\\Interpress\\INWATER\\temat do drupala\\INWATER.sublime-project"
+			],
+			[
+				"coa",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\iKleks Coach.sublime-project"
+			],
+			[
+				"py",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\pyDDP.sublime-project"
+			],
+			[
+				"pyddp",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\pyDDP.sublime-project"
+			],
+			[
+				"ccoa",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\iKleks Coach.sublime-project"
+			],
+			[
+				"",
+				"C:\\wamp\\www\\coach\\Ikleks Coach - LOCAL COPY.sublime-project"
+			],
+			[
+				"ozo",
+				"C:\\Users\\Kuba Orlik\\Documents\\Sublime-text\\ozorro.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
