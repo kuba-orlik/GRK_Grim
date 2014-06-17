@@ -73,6 +73,7 @@ void reshape (int w, int h)
 	setupShaderData(w, h);
 
 	glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+	//glViewport(0, 0, (GLsizei) 200, (GLsizei) 200);
 	glutPostRedisplay();
 }
 

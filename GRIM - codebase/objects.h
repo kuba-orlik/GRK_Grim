@@ -299,7 +299,7 @@ void DrawParthenon(glutil::MatrixStack &modelMatrix)
 		glUseProgram(0);
 	}
 
-	//Draw headpiece.
+	//Draw asspiecie.
 	{
 		glutil::PushStack push(modelMatrix);
 
@@ -365,7 +365,7 @@ void objects_draw(){
 
 			glUseProgram(UniformColor.theProgram);
 			glUniformMatrix4fv(UniformColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-			glUniform4f(UniformColor.baseColorUnif, 0.302f, 0.416f, 0.0589f, 1.0f);
+			glUniform4f(UniformColor.baseColorUnif, 1.0f, 0.416f, 0.0589f, 1.0f);
 			g_pPlaneMesh->Render();
 			glUseProgram(0);
 		}
