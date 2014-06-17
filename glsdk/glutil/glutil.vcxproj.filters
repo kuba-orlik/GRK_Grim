@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="include">
+			<UniqueIdentifier>{815D377B-451D-5E49-86A2-F745B3ECB148}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="include\glutil">
+			<UniqueIdentifier>{B04A33E3-F8E0-1B4D-980B-205961E48DC7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="source">
+			<UniqueIdentifier>{867D1B8C-B786-D44D-A113-CEC520428D3D}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="include\glutil\Debug.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glutil\glutil.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glutil\MatrixStack.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glutil\MousePoles.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glutil\Shader.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+		<ClInclude Include="include\glutil\WindowPos.h">
+			<Filter>include\glutil</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="source\Debug.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\MatrixStack.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\MousePoles.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\Shader.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+		<ClCompile Include="source\WindowPos.cpp">
+			<Filter>source</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>
