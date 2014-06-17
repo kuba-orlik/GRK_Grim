@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5BD5CA70-1F30-1140-9327-A082EC55695E}</ProjectGuid>
+    <ProjectGuid>{744822E2-D38A-F944-8A6A-3BE2BCE7A0B1}</ProjectGuid>
     <RootNamespace>Tut 07 World Scene</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -61,8 +61,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)Tut 07 World SceneD.pdb</ProgramDataBaseFileName>
@@ -89,11 +88,9 @@
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader></PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat></DebugInformationFormat>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
     <ResourceCompile>
@@ -124,13 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\framework\framework.vcxproj">
-      <Project>{EB9BCEDF-FF7B-9249-8BFE-1CE09FB7B609}</Project>
+      <Project>{2F063679-ADF5-8D44-9A21-4D5B393BBF83}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="objects.h" />
-    <ClInclude Include="programs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E8EB0E6E-7BB0-644C-99ED-D3B6D60402B6}</ProjectGuid>
+    <ProjectGuid>{984F1350-9760-534B-9891-5BFBC8D5C255}</ProjectGuid>
     <RootNamespace>Tut 07 World With UBO</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -121,7 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\framework\framework.vcxproj">
-      <Project>{EB9BCEDF-FF7B-9249-8BFE-1CE09FB7B609}</Project>
+      <Project>{2F063679-ADF5-8D44-9A21-4D5B393BBF83}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

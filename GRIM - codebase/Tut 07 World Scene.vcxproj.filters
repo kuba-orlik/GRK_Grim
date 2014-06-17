@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{EAAE4C2E-E00A-5046-8493-C76055785997}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\PosOnlyWorldTransform.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\PosColorWorldTransform.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorPassthrough.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorMultUniform.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorUniform.frag">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="World Scene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="programs.h" />
+    <ClInclude Include="objects.h" />
+  </ItemGroup>
+</Project>
