@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GRK_Grim", "GRK_Grim\GRK_Grim.vcxproj", "{68DEBFFF-2643-49C4-B212-46707BF20C92}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GRK_Grim", "GRK_Grim\GRK_Grim.vcxproj", "{1DEA59EA-B857-431B-AA84-323F27E6F890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68DEBFFF-2643-49C4-B212-46707BF20C92}.Debug|Win32.ActiveCfg = Debug|Win32
-		{68DEBFFF-2643-49C4-B212-46707BF20C92}.Debug|Win32.Build.0 = Debug|Win32
-		{68DEBFFF-2643-49C4-B212-46707BF20C92}.Release|Win32.ActiveCfg = Release|Win32
-		{68DEBFFF-2643-49C4-B212-46707BF20C92}.Release|Win32.Build.0 = Release|Win32
+		{1DEA59EA-B857-431B-AA84-323F27E6F890}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DEA59EA-B857-431B-AA84-323F27E6F890}.Debug|Win32.Build.0 = Debug|Win32
+		{1DEA59EA-B857-431B-AA84-323F27E6F890}.Release|Win32.ActiveCfg = Release|Win32
+		{1DEA59EA-B857-431B-AA84-323F27E6F890}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{68DEBFFF-2643-49C4-B212-46707BF20C92}</ProjectGuid>
+    <ProjectGuid>{1DEA59EA-B857-431B-AA84-323F27E6F890}</ProjectGuid>
     <RootNamespace>GRK_Grim</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -62,13 +62,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Grim.cpp" />
-    <ClCompile Include="..\scene.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\camera.h" />
-    <ClInclude Include="..\objects.h" />
-    <ClInclude Include="..\programs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
