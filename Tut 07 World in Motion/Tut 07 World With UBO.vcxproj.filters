@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{5AFE36B1-C614-5A4D-8AD8-645FDAF60661}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\PosOnlyWorldTransformUBO.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\PosColorWorldTransformUBO.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorPassthrough.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorMultUniform.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorUniform.frag">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="World With UBO.cpp" />
+  </ItemGroup>
+</Project>

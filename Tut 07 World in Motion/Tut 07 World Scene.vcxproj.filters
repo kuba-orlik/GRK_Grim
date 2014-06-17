@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="data">
+      <UniqueIdentifier>{E0CF1E74-4B9E-C547-8950-5606E68A126E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\PosOnlyWorldTransform.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\PosColorWorldTransform.vert">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorPassthrough.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorMultUniform.frag">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ColorUniform.frag">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="World Scene.cpp" />
+  </ItemGroup>
+</Project>
