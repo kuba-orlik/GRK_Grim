@@ -40,6 +40,10 @@ local.properties
 *.suo
 *.user
 *.sln.docstates
+*.sln
+*.sdf
+*.opensdf
+*.suo
 
 # Build results
 
