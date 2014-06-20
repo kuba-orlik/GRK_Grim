@@ -1,8 +1,13 @@
+
+#include "loader.cpp"
+
 Framework::Mesh *g_pConeMesh = NULL;
 Framework::Mesh *g_pCylinderMesh = NULL;
 Framework::Mesh *g_pCubeTintMesh = NULL;
 Framework::Mesh *g_pCubeColorMesh = NULL;
 Framework::Mesh *g_pPlaneMesh = NULL;
+OBJ *hill= NULL;
+
 
 //Trees are 3x3 in X/Z, and fTrunkHeight+fConeHeight in the Y.
 
@@ -26,8 +31,7 @@ struct TreeData
 	float fConeHeight;
 };
 
-static const TreeData g_forest[] =
-{
+static const TreeData g_forest[] ={
 	{-45.0f, -40.0f, 2.0f, 3.0f},
 	{-42.0f, -35.0f, 2.0f, 3.0f},
 	{-39.0f, -29.0f, 2.0f, 4.0f},
@@ -133,6 +137,7 @@ static const TreeData g_forest[] =
 	{25.0f, 40.0f, 2.0f, 3.0f},
 	{25.0f, 45.0f, 2.0f, 3.0f},
 };
+
 
 void DrawTree(glutil::MatrixStack &modelMatrix, float fTrunkHeight = 2.0f, float fConeHeight = 3.0f)
 {
@@ -369,35 +374,6 @@ void objects_draw(){
 			g_pPlaneMesh->Render();
 			glUseProgram(0);
 		}
-
-		//Draw the trees
-		DrawForest(modelMatrix);
-
-		//Draw the building.
-		{
-			glutil::PushStack push(modelMatrix);
-			modelMatrix.Translate(glm::vec3(20.0f, 0.0f, -10.0f));
-
-			DrawParthenon(modelMatrix);
-		}
-		if(g_bDrawLookatPoint)
-		{
-			glDisable(GL_DEPTH_TEST);
-			glm::mat4 idenity(1.0f);
-
-			glutil::PushStack push(modelMatrix);
-
-			glm::vec3 cameraAimVec = g_camTarget - camPos;
-			modelMatrix.Translate(0.0f, 0.0, -glm::length(cameraAimVec));
-			modelMatrix.Scale(1.0f, 1.0f, 1.0f);
-		
-			glUseProgram(ObjectColor.theProgram);
-			glUniformMatrix4fv(ObjectColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-			glUniformMatrix4fv(ObjectColor.worldToCameraMatrixUnif, 1, GL_FALSE, glm::value_ptr(idenity));
-			g_pCubeColorMesh->Render();
-			glUseProgram(0);
-			glEnable(GL_DEPTH_TEST);
-		}
 }
 
 
@@ -407,6 +383,7 @@ void loadObjects(){
 	g_pCubeTintMesh = new Framework::Mesh("UnitCubeTint.xml");
 	g_pCubeColorMesh = new Framework::Mesh("UnitCubeColor.xml");
 	g_pPlaneMesh = new Framework::Mesh("UnitPlane.xml");
+	hill = new OBJ("objects/hills1.obj");
 }
 
 

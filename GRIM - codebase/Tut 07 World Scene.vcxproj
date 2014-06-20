@@ -112,6 +112,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="loader.cpp" />
     <ClCompile Include="World Scene.cpp">
     </ClCompile>
   </ItemGroup>

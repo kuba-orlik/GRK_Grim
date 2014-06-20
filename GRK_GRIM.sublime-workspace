@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"out_",
+				"out_uvs"
+			],
+			[
 				"color",
 				"color-dark"
 			],
@@ -204,6 +208,36 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hill.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/bleeehill.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hills1.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hill_blend.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hill_blend_KubaJestGupi.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glmesh/Debug/glmesh.lastbuildstate",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glmesh/Debug/Lib-link.read.1.tlog",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtc/half_float.inl",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/How it works.txt",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/templates/header_template",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/World Scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitignore",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Grim.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.h",
+		"/C/Users/Kuba/Dropbox/Desktop/Hill.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/Hill.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/objects.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/data/listOfCoreVersions.lua",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/License.txt",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/SceneBinders.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Scene.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/string_cast.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/objects.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/programs.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/camera.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitattributes",
 		"/C/Users/Kuba Orlik/AppData/Local/Temp/fz3temp-1/header.php",
 		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-fields.html",
 		"/D/FTP Cache/INWATER - drupal/sftp-config.json",
@@ -301,47 +335,18 @@
 		"/C/FTP Cache/ikleks workout 2/temp.php",
 		"/C/Users/Kuba Orlik/Downloads/includes.php",
 		"/C/FTP Cache/ikleks workout 2/home.php",
-		"/D/Dropbox/Dump/Aspazja temp/post.html",
-		"/D/Dropbox/Dump/Aspazja temp/post.min.html",
-		"/D/Dropbox/Dump/Aspazja temp/footer_snippet_5.html",
-		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/footer_snippet.html",
-		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/post.min.html",
-		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/post.html",
-		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/backup.html",
-		"/C/Users/Kuba Orlik/Desktop/Aspazja temp/New Text Document.txt",
-		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise_list.html",
-		"/C/FTP Cache/ikleks workout 2/classes/exercises.php",
-		"/C/Users/Kuba Orlik/Desktop/taski.txt",
-		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise.html",
-		"/C/FTP Cache/ikleks workout 2/controllers/ExercisesController.php",
-		"/C/FTP Cache/ikleks workout 2/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/zlib-browserify/zlib.js",
-		"/C/FTP Cache/ikleks workout 2/web/html/views/exercise_go.html",
-		"/C/FTP Cache/ikleks workout 2/web/js/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/pics/profile_pictures/google/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/web/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/web/css/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/sftp-config.json",
-		"/C/FTP Cache/ikleks workout 2/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/api/.htaccess",
-		"/C/FTP Cache/ikleks workout 2/classes/PHPMailer/examples/styles/shThemeAppleScript.css",
-		"/C/FTP Cache/ikleks workout 2/node_modules/grunt/node_modules/hooker/test/hooker_test.js",
-		"/C/FTP Cache/ikleks workout 2/test.php",
-		"/C/FTP Cache/ikleks workout 2/package.json",
-		"/C/FTP Cache/ikleks workout 2/classes/logEntries.php",
-		"/C/FTP Cache/ikleks workout 2/classes/database.php",
-		"/C/FTP Cache/ikleks workout 2/Gruntfile.js",
-		"/C/FTP Cache/ikleks workout 2/web/js/coach.js",
-		"/C/FTP Cache/ikleks workout 2/pics/.htaccess"
+		"/D/Dropbox/Dump/Aspazja temp/post.html"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"",
 			"D:\\FTP Cache\\INWATER - drupal\\themes\\inwater",
 			"D:\\FTP Cache\\INWATER - drupal\\themes\\garland",
 			""
@@ -352,6 +357,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"f",
+			"getArraySize",
+			"it.",
+			"out_vertices",
+			"class Mesh",
+			"framework::",
+			"defaults",
+			"g_bDrawLookatPoint",
+			"{",
+			"g_fore",
+			"forest",
+			"#include <",
+			"vcx",
+			"vc",
 			"renderenu",
 			"render",
 			"large",
@@ -465,26 +484,12 @@
 			"javascript",
 			"powrót",
 			"(?=\\<)h2(?=\\>)",
-			"h2",
-			"H2",
-			"h2",
-			"0!im",
-			";",
-			"242px",
-			",",
-			"web",
-			"splice",
-			"exercise_go",
-			"input",
-			"result[^s]",
-			"[\"']result[\"']",
-			"family",
-			"Roboto"
+			"h2"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 			"",
@@ -603,6 +608,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"loader",
+				"GRIM - codebase\\loader.cpp"
+			],
+			[
+				"scene",
+				"Tut 07 World in Motion\\World Scene.cpp"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
 			[
 				"sft",
 				"sftp-config.json"
@@ -909,7 +926,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 344.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
