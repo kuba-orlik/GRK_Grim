@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{744822E2-D38A-F944-8A6A-3BE2BCE7A0B1}</ProjectGuid>
+    <ProjectGuid>{631EA8EB-BD21-6046-911E-C94ECDB32383}</ProjectGuid>
     <RootNamespace>Tut 07 World Scene</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -112,7 +112,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="loader.cpp" />
     <ClCompile Include="World Scene.cpp">
     </ClCompile>
   </ItemGroup>
@@ -125,13 +124,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\framework\framework.vcxproj">
-      <Project>{2F063679-ADF5-8D44-9A21-4D5B393BBF83}</Project>
+      <Project>{C3F1D6D3-BA57-E245-A637-1E388EC4120A}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
     <ClInclude Include="objects.h" />
-    <ClInclude Include="programs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "framework", "..\framework\framework.vcxproj", "{C3F1D6D3-BA57-E245-A637-1E388EC4120A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tut 07 World Scene", "Tut 07 World Scene.vcxproj", "{631EA8EB-BD21-6046-911E-C94ECDB32383}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A} = {C3F1D6D3-BA57-E245-A637-1E388EC4120A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tut 07 World With UBO", "Tut 07 World With UBO.vcxproj", "{163EA570-E4A8-1D41-B8BE-3DA07CB3C47E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A} = {C3F1D6D3-BA57-E245-A637-1E388EC4120A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A}.Debug|Win32.Build.0 = Debug|Win32
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A}.Release|Win32.ActiveCfg = Release|Win32
+		{C3F1D6D3-BA57-E245-A637-1E388EC4120A}.Release|Win32.Build.0 = Release|Win32
+		{631EA8EB-BD21-6046-911E-C94ECDB32383}.Debug|Win32.ActiveCfg = Debug|Win32
+		{631EA8EB-BD21-6046-911E-C94ECDB32383}.Debug|Win32.Build.0 = Debug|Win32
+		{631EA8EB-BD21-6046-911E-C94ECDB32383}.Release|Win32.ActiveCfg = Release|Win32
+		{631EA8EB-BD21-6046-911E-C94ECDB32383}.Release|Win32.Build.0 = Release|Win32
+		{163EA570-E4A8-1D41-B8BE-3DA07CB3C47E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{163EA570-E4A8-1D41-B8BE-3DA07CB3C47E}.Debug|Win32.Build.0 = Debug|Win32
+		{163EA570-E4A8-1D41-B8BE-3DA07CB3C47E}.Release|Win32.ActiveCfg = Release|Win32
+		{163EA570-E4A8-1D41-B8BE-3DA07CB3C47E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

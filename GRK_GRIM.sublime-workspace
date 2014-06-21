@@ -131,20 +131,20 @@
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 58.0,
 		"selected_items":
 		[
 			[
-				"javascritp",
-				"Set Syntax: JavaScript"
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"remove",
 				"Package Control: Remove Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"javascritp",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"sass",
@@ -208,6 +208,29 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/World Scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/GRIM.sln",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/progs/demos/smooth_opengl3/smooth_opengl3.c",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/customFrag.frag",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosOnlyWorldTransform.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosOnlyWorldTransformUBO.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitCubeTint.xml",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/ColorUniform.frag",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/customVert.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosColorWorldTransformUBO.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosColorWorldTransform.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/programs.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/World Scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRK_GRIM.sublime-project",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/GRIM.opensdf",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitCone.xml",
+		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hill.obj",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/bleeehill.obj",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hills1.obj",
@@ -218,13 +241,10 @@
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtc/half_float.inl",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/How it works.txt",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/templates/header_template",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/World Scene.cpp",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitignore",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Grim.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.h",
 		"/C/Users/Kuba/Dropbox/Desktop/Hill.obj",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/Hill.obj",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/objects.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/data/listOfCoreVersions.lua",
@@ -315,31 +335,11 @@
 		"/D/FTP Cache/INWATER - drupal/includes/pager.inc",
 		"/D/FTP Cache/INWATER - drupal/modules/views/plugins/views_plugin_style_grid.inc",
 		"/D/FTP Cache/INWATER - drupal/themes/garland/page.tpl.php",
-		"/D/FTP Cache/INWATER - drupal/themes/garland/template.php",
-		"/C/Users/Kuba Orlik/AppData/Roaming/Sublime Text 3/Packages/CSScomb JS/CSScomb JS.sublime-settings",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/inwater_theme.css",
-		"/D/FTP Cache/INWATER - drupal/INWATER - drupal.sublime-project",
-		"/D/FTP Cache/INWATER - drupal/web.config",
-		"/C/Users/Kuba Orlik/AppData/Roaming/Sublime Text 3/Packages/EasyDiff/easy_diff.sublime-settings",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/tests/session_test.info",
-		"/D/FTP Cache/INWATER - drupal/modules/views/plugins/views_plugin_access.inc",
-		"/D/FTP Cache/INWATER - drupal/includes/common.inc",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/template.html_temp",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/rmenu.js",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/responsive_menu/example_style.css",
-		"/D/FTP Cache/INWATER - drupal/modules/views/handlers/views_handler_sort_menu_hierarchy.inc",
-		"/D/FTP Cache/INWATER - drupal/modules/forum/forum-rtl.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/tests/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.info",
-		"/D/FTP Cache/INWATER - drupal/modules/views/handlers/views_handler_relationship_groupwise_max.inc",
-		"/D/FTP Cache/INWATER - drupal/README.txt",
-		"/C/FTP Cache/ikleks workout 2/temp.php",
-		"/C/Users/Kuba Orlik/Downloads/includes.php",
-		"/C/FTP Cache/ikleks workout 2/home.php",
-		"/D/Dropbox/Dump/Aspazja temp/post.html"
+		"/D/FTP Cache/INWATER - drupal/themes/garland/template.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -357,6 +357,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"glDrawArrays",
+			"out_normals",
+			"baseColor",
+			"include \"pr",
+			"#include \"l",
+			"#include l",
+			"loadProgram(",
+			"loadProgram",
+			"useprogram",
+			"posonly",
+			"f12",
+			"initializeProgram",
+			"loadProgram",
+			"attribpoint",
+			"uvIndex",
 			"f",
 			"getArraySize",
 			"it.",
@@ -469,22 +484,7 @@
 			"(?=\\<style\\>)",
 			"(?=<style>) ",
 			"(?=<style>)",
-			"(?=<style>.*) (.*</style>)",
-			"    ",
-			"\\n",
-			"to nie",
-			"\\n",
-			"h2",
-			"span",
-			"(?=\\<)span(?=\\>)",
-			"\\n",
-			"div_45",
-			"href",
-			"href=",
-			"javascript",
-			"powrót",
-			"(?=\\<)h2(?=\\>)",
-			"h2"
+			"(?=<style>.*) (.*</style>)"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -597,6 +597,10 @@
 	{
 		"height": 201.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 124.0
+	},
 	"project": "GRK_GRIM.sublime-project",
 	"replace":
 	{
@@ -608,6 +612,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"world",
+				"GRIM - codebase\\World Scene.cpp"
+			],
+			[
+				"coloruniform",
+				"GRIM - codebase\\data\\ColorUniform.frag"
+			],
+			[
+				"obje",
+				"GRIM - codebase\\objects.h"
+			],
 			[
 				"loader",
 				"GRIM - codebase\\loader.cpp"

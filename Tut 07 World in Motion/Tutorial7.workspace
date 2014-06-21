@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Tutorial7">
+		<Project filename="../framework/framework.cbp" active="1">
+		</Project>
+		<Project filename="Tut 07 World Scene.cbp">
+			<Depends filename="../framework/framework.cbp" />
+		</Project>
+		<Project filename="Tut 07 World With UBO.cbp">
+			<Depends filename="../framework/framework.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

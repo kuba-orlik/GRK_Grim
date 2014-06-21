@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>
+			OBJ to xml converter
+		</title>
+	</head>
+	<body>
+	<textarea id="to_convert" rows="30" cols="80"></textarea>
+	<textarea id="converted" rows="30" cols="80"></textarea>
+	<br>
+	<button onClick="convert()">
+		convert!
+	</button>
+	</body>
+	<script>
+	function $(selector){
+		return document.querySelectorAll(selector);
+	} 
+	function getLines(str){
+		return str.split("\n");
+	}
+
+	function getLinesFromTA(id){
+		return getLines($("#"+id)[0].value);
+	}
+
+	function vertex(x, y, z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		precision = 5;
+
+		round = function(number, precision){
+			return Math.round(number*Math.pow(10, precision))/Math.pow(10, precision);
+		}
+
+		this.print = function(){
+			return round(this.x, precision) + " " + round(this.y, precision) + " " + round(this.z, precision) + "\n";
+		}
+	}
+
+	function color(x, y, z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		this.print = function(){
+			return this.x + " " + this.y + " " + this.z + " 1 \n";
+		}
+	}
+
+	function readVertexFromline(line){
+		var found = getNumbers(line);
+		//console.log(found);
+		x = found[0];
+		y = found[1];
+		z = found[2];
+		return new vertex(x, y, z);
+	}
+
+	function getNumbers(text){
+		var regex = /(\-?[0-9]+\.?[0-9]*)/g;
+		var found = text.match(regex);	
+		return found;
+		
+	}
+
+	function readFaceFromLine(line){
+		var found = getNumbers(line);
+		var jump = found.length/3;
+		var arr = [];
+		for(var i=0; i<3; i++){
+			arr.push(found[i*jump]);
+		}
+		x = arr[0];
+		y = arr[1];
+		z = arr[2];
+		return new vertex(x, y, z);
+	}
+
+	function convert(){
+		var vertices = [];
+		var texture_coordinates = [];
+		var normals = [];
+		var faces = [];
+		var lines = getLinesFromTA("to_convert");
+		for(var i in lines){
+			var line = lines[i];
+			if(line[0]=="v"){
+				vertices.push(readVertexFromline(line));
+			}else if(line[0]=="f"){
+				faces.push(readFaceFromLine(line));
+			}
+		}
+		$("#converted")[0].value = generateXML(vertices, faces);
+	}
+
+
+
+	function generateXML(vertices, faces){
+		var out = '<?xml version="1.0" encoding="UTF-8"?>'+
+					'<?oxygen RNGSchema="../../Documents/meshFormat.rnc" type="compact"?>'+
+					'<mesh xmlns="http://www.arcsynthesis.com/gltut/mesh" >'+
+					'<attribute index="0" type="float" size="3" > ';
+		for(var i in vertices){
+			vertex = vertices[i];
+			out+=vertex.print();
+		}
+		out+='</attribute>';
+		out+='<attribute index="1" type="float" size="4" >';
+		var color_vertex = new color(1.0, 1, 1);
+		for(var i=0; i<vertices.length; i++){
+			vertex = vertices[i];
+			out+=color_vertex.print();
+		}
+		out+='</attributes>';
+		out+='<indices cmd="triangles" type="ushort">';
+		for(var i in faces){
+			face = faces[i];
+			out+=face.print();
+		}	
+		out+='</indices></mesh>';
+		return out;
+	}
+	</script>
+</html>

@@ -15,7 +15,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "programs.h"
 #include "camera.h"
 #include "objects.h"
 

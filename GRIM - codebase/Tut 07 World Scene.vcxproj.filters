@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="data">
-      <UniqueIdentifier>{EAAE4C2E-E00A-5046-8493-C76055785997}</UniqueIdentifier>
+      <UniqueIdentifier>{F80E228E-3876-B54B-A792-011694B58FC9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -24,11 +24,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="World Scene.cpp" />
-    <ClCompile Include="loader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="programs.h" />
     <ClInclude Include="objects.h" />
   </ItemGroup>
 </Project>

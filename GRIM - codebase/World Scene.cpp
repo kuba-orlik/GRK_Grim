@@ -38,7 +38,7 @@ void init()
 		throw;
 	}
 
-	glEnable(GL_CULL_FACE);
+	//glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
 	glFrontFace(GL_CW);
 
@@ -73,7 +73,6 @@ void reshape (int w, int h)
 	setupShaderData(w, h);
 
 	glViewport(0, 0, (GLsizei) w, (GLsizei) h);
-	//glViewport(0, 0, (GLsizei) 200, (GLsizei) 200);
 	glutPostRedisplay();
 }
 
