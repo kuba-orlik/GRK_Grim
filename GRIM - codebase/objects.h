@@ -361,9 +361,9 @@ void objects_draw(){
 		{
 			glutil::PushStack push(modelMatrix);
 
-			modelMatrix.Scale(glm::vec3(100.0f, 1.0f, 100.0f));
+			modelMatrix.Scale(glm::vec3(100.0f, 100.0f, 100.0f));
 
-			glUseProgram(UniformColor.theProgram);
+			glUseProgram(UniformColorTint.theProgram);
 			glUniformMatrix4fv(UniformColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
 			glUniform4f(UniformColor.baseColorUnif, 0.302f, 0.416f, 0.0589f, 1.0f);
 			g_pPlaneMesh->Render();

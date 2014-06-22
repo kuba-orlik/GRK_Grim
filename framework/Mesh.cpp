@@ -269,6 +269,7 @@ namespace Framework
 				pChild; pChild = pChild->next_sibling())
 			{
 				strStream.write(pChild->value(), pChild->value_size());
+				//printf(pChild->value());
 			}
 
 			strStream.flush();
@@ -481,7 +482,7 @@ namespace Framework
 				throw std::runtime_error("Could not find the mesh file: " + strDataFilename);
 
 			std::vector<char> fileData;
-			fileData.reserve(2*1024*1024);
+			fileData.reserve(15*1024*1024);
 			fileData.insert(fileData.end(), std::istreambuf_iterator<char>(fileStream),
 				std::istreambuf_iterator<char>());
 			fileData.push_back('\0');

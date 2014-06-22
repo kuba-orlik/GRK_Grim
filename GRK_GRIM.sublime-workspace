@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"final",
+				"finalMatrix3"
+			],
+			[
+				"model",
+				"modelToWorldMatrix"
+			],
+			[
+				"get",
+				"getNewVertices"
+			],
+			[
+				"indexe",
+				"indexesManager"
+			],
+			[
+				"Pai",
+				"pairCollection"
+			],
+			[
+				"vertex",
+				"vertex_index"
+			],
+			[
+				"verte",
+				"vertex_index"
+			],
+			[
 				"out_",
 				"out_uvs"
 			],
@@ -62,10 +90,6 @@
 			[
 				"php",
 				"phpinfo"
-			],
-			[
-				"get",
-				"getLogEntries  (function)"
 			],
 			[
 				"negl",
@@ -127,13 +151,97 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "GRIM - codebase/data/UnitCylinderTint.xml",
+			"settings":
+			{
+				"buffer_size": 657537,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GRIM - codebase/objects/hill.obj",
+			"settings":
+			{
+				"buffer_size": 1383816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "GRIM - codebase/data/UnitPlane.xml",
+			"settings":
+			{
+				"buffer_size": 589400,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GRIM - codebase/objects.h",
+			"settings":
+			{
+				"buffer_size": 12815,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GRIM - codebase/data/PosColorWorldTransform.vert",
+			"settings":
+			{
+				"buffer_size": 1178,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "GRIM - codebase/objects/hill_flat.obj",
+			"settings":
+			{
+				"buffer_size": 1344168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "GRIM - codebase/objects/hill_smooth.obj",
+			"settings":
+			{
+				"buffer_size": 1142161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "GRIM - codebase/objects/trunk.obj",
+			"settings":
+			{
+				"buffer_size": 368044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "obj to xml/convert.html",
+			"settings":
+			{
+				"buffer_size": 5044,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "framework/Mesh.cpp",
+			"settings":
+			{
+				"buffer_size": 20170,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 173.0,
 		"selected_items":
 		[
+			[
+				"glsl",
+				"Set Syntax: GLSL"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -208,24 +316,64 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/cube.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/susy.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/framework.cbp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/progs/demos/smooth_opengl3/smooth_opengl3.dsp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/progs/demos/smooth_opengl3/smooth_opengl3.c",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/simd_mat4.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glmesh/Debug/VertexFormat.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/vec1.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/obj/Debug/Tut 07 World Scene/Tut 07 World Scene.vcxprojResolveAssemblyReference.cache",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/GenPlane.lua",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/programs.h",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/hill.mtl",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/How it works.txt",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/data/headerFunc.lua",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitPlane.xml",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitConeTint.xml",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosColorWorldTransform.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/ColorMultUniform.frag",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/obj to xml/convert.html",
+		"/C/Users/Kuba/AppData/Local/Temp/Rar$DIa0.555/Hill.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/trunk.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Timer.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/multiple.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/ColorUniform.frag",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/framework.vcxproj.filters",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitattributes",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/freeglut_videoresize.c",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Scene.cpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects/cylinder.obj",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/color_space_YCoCg.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/templates/cpp_template",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/core/type.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/GenCones.lua",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/data/PosOnlyWorldTransform.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosOnlyWorldTransform.vert",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/templates/header_template",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRK_GRIM.sublime-project",
+		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/obj/Debug/Tut 07 World Scene/link.command.1.tlog",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/freeglut_stroke_mono_roman.c",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/matrix_operation.hpp",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/ColorPassthrough.frag",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/premake4.lua",
+		"/C/Users/Kuba/Dropbox/Desktop/Tutorial 0.3.8/Tut 16 Gamma and Textures/data/UnitSphere.xml",
+		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/_MakeExtHeaderFile.lua",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/World Scene.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/GRIM.sln",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/progs/demos/smooth_opengl3/smooth_opengl3.c",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/objects.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/customFrag.frag",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosOnlyWorldTransform.vert",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosOnlyWorldTransformUBO.vert",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitCubeTint.xml",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/ColorUniform.frag",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/customVert.vert",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosColorWorldTransformUBO.vert",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/PosColorWorldTransform.vert",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.cpp",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/programs.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/loader.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Tut 07 World in Motion/World Scene.cpp",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRK_GRIM.sublime-project",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/GRIM.opensdf",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/GRIM - codebase/data/UnitCone.xml",
 		"/C/Users/Kuba/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -239,8 +387,6 @@
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glmesh/Debug/glmesh.lastbuildstate",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glmesh/Debug/Lib-link.read.1.tlog",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtc/half_float.inl",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glload/codegen/How it works.txt",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/freeglut/src/templates/header_template",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitignore",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/Grim.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Mesh.h",
@@ -251,13 +397,11 @@
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/License.txt",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/SceneBinders.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Scene.h",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/framework/Scene.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/scene.cpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/glsdk/glm/glm/gtx/string_cast.hpp",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/objects.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/programs.h",
 		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/camera.h",
-		"/C/Users/Kuba/Dropbox/Desktop/GRK_Grim/.gitattributes",
 		"/C/Users/Kuba Orlik/AppData/Local/Temp/fz3temp-1/header.php",
 		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-fields.html",
 		"/D/FTP Cache/INWATER - drupal/sftp-config.json",
@@ -299,53 +443,18 @@
 		"/D/FTP Cache/INWATER - drupal/modules/contextual/contextual.css",
 		"/D/FTP Cache/INWATER - drupal/modules/comment/comment.css",
 		"/D/FTP Cache/INWATER - drupal/modules/color/color.css",
-		"/D/FTP Cache/INWATER - drupal/modules/book/book.css",
-		"/D/FTP Cache/INWATER - drupal/modules/block/block.css",
-		"/D/FTP Cache/INWATER - drupal/modules/aggregator/aggregator.css",
-		"/D/FTP Cache/INWATER - drupal/misc/farbtastic/farbtastic.css",
-		"/D/FTP Cache/INWATER - drupal/misc/print.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css.unoptimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css.optimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css.unoptimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css.optimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css.unoptimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css.optimized.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_subfolder/css_input_with_import.css",
-		"/D/FTP Cache/INWATER - drupal/modules/views/help/theme-css.html",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_without_import.css",
-		"/D/FTP Cache/INWATER - drupal/modules/simpletest/files/css_test_files/css_input_with_import.css",
-		"/D/FTP Cache/INWATER - drupal/CHANGELOG.txt",
-		"/D/FTP Cache/INWATER - drupal/themes/garland/style.css",
-		"/D/FTP Cache/INWATER - drupal/themes/seven/style.css",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/script.js",
-		"/C/Users/Kuba Orlik/Desktop/flex-test.html",
-		"/C/Users/Kuba Orlik/Desktop/CSS inject/script.js",
-		"/C/Users/Kuba Orlik/Desktop/CSS inject/manifest.json",
-		"/C/Users/Kuba Orlik/Desktop/CSS inject/config.html",
-		"/C/Users/Kuba Orlik/Desktop/CSS inject/classes.js",
-		"/C/Users/Kuba Orlik/Desktop/temp.js",
-		"/D/FTP Cache/INWATER - drupal/modules/views/help/style-comment-rss.html",
-		"/D/FTP Cache/INWATER - drupal/.ftpquota",
-		"/D/FTP Cache/INWATER - drupal/themes/bartik/templates/node.tpl.php",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/slides/slides.css",
-		"/D/FTP Cache/INWATER - drupal/themes/bartik/templates/page.tpl.php",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/templates/block--system--main.tpl.php",
-		"/D/FTP Cache/INWATER - drupal/themes/inwater/slides/slideshow.js",
-		"/D/FTP Cache/INWATER - drupal/modules/comment/comment-node-form.js",
-		"/D/FTP Cache/INWATER - drupal/includes/pager.inc",
-		"/D/FTP Cache/INWATER - drupal/modules/views/plugins/views_plugin_style_grid.inc",
-		"/D/FTP Cache/INWATER - drupal/themes/garland/page.tpl.php",
-		"/D/FTP Cache/INWATER - drupal/themes/garland/template.php"
+		"/D/FTP Cache/INWATER - drupal/modules/book/book.css"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"*.xml",
 			"",
 			"D:\\FTP Cache\\INWATER - drupal\\themes\\inwater",
 			"D:\\FTP Cache\\INWATER - drupal\\themes\\garland",
@@ -357,6 +466,38 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<",
+			"6756",
+			"f",
+			"0",
+			"plane",
+			"<",
+			"RESER",
+			"length",
+			"508",
+			"arr.push",
+			"normal",
+			"vert",
+			"vert1",
+			"function",
+			"1",
+			"split",
+			"faces",
+			"505//",
+			"index=\"2",
+			"vertex",
+			"			 ",
+			"n",
+			"drAWtREE",
+			"9f",
+			"UniformColorTint",
+			"ConeMesh",
+			"index",
+			"vao",
+			"xml.*vao",
+			"vertexAttrib",
+			"RenderCmd",
+			"index\\W",
 			"glDrawArrays",
 			"out_normals",
 			"baseColor",
@@ -452,44 +593,12 @@
 			"    ",
 			"\\n",
 			": ",
-			"    ",
-			"\\n",
-			": ",
-			"    ",
-			"\\n",
-			"539",
-			": ",
-			"    ",
-			"\\n",
-			"539",
-			": ",
-			"    ",
-			"\\n",
-			"539",
-			": ",
-			"    ",
-			"\\n",
-			"539px",
-			": ",
-			"    ",
-			"\\n",
-			"1100px",
-			"; ",
-			": ",
-			"    ",
-			"\\n",
-			"(; |: )",
-			"(<style>.*) (.*</style>)",
-			"(\\<style\\>)",
-			"(?=\\<style\\>)",
-			"(?=<style>) ",
-			"(?=<style>)",
-			"(?=<style>.*) (.*</style>)"
+			"    "
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"",
@@ -549,8 +658,326 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "GRIM - codebase/data/UnitCylinderTint.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657537,
+								657537
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 597087.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "GRIM - codebase/objects/hill.obj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1383816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1383816
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "GRIM - codebase/data/UnitPlane.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 589400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								589400,
+								589400
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 630072.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "GRIM - codebase/objects.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11108,
+								11108
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6455.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "GRIM - codebase/data/PosColorWorldTransform.vert",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/OpenGL Shading Language (GLSL)/GLSL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "GRIM - codebase/objects/hill_flat.obj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1344168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1344168,
+								1344168
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 741374.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "GRIM - codebase/objects/hill_smooth.obj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1142161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1142161
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 12527.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "GRIM - codebase/objects/trunk.obj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								368044
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 211160.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "obj to xml/convert.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2134,
+								2134
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1507.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "framework/Mesh.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13547,
+								13547
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8704.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -613,16 +1040,108 @@
 		"selected_items":
 		[
 			[
+				"convert",
+				"obj to xml\\convert.html"
+			],
+			[
+				"smoo",
+				"GRIM - codebase\\objects\\hill_smooth.obj"
+			],
+			[
+				"flat",
+				"GRIM - codebase\\objects\\hill_flat.obj"
+			],
+			[
+				"hillfla",
+				"GRIM - codebase\\objects\\hill_flat.obj"
+			],
+			[
+				"smooth",
+				"GRIM - codebase\\objects\\hill_smooth.obj"
+			],
+			[
+				".vert",
+				"GRIM - codebase\\data\\PosColorWorldTransform.vert"
+			],
+			[
+				"obje",
+				"GRIM - codebase\\objects.h"
+			],
+			[
+				"plane.xml",
+				"GRIM - codebase\\data\\UnitPlane.xml"
+			],
+			[
+				"hill.obj",
+				"GRIM - codebase\\objects\\hill.obj"
+			],
+			[
+				"trunk",
+				"GRIM - codebase\\objects\\trunk.obj"
+			],
+			[
+				"mesh.cpp",
+				"framework\\Mesh.cpp"
+			],
+			[
+				"mult.frag",
+				"GRIM - codebase\\data\\ColorMultUniform.frag"
+			],
+			[
+				".frag",
+				"GRIM - codebase\\data\\ColorUniform.frag"
+			],
+			[
+				"susy",
+				"GRIM - codebase\\objects\\susy.obj"
+			],
+			[
+				"cube",
+				"GRIM - codebase\\objects\\cube.obj"
+			],
+			[
+				"cyli",
+				"GRIM - codebase\\objects\\cylinder.obj"
+			],
+			[
+				"conetin",
+				"GRIM - codebase\\data\\UnitConeTint.xml"
+			],
+			[
+				"conetint",
+				"GRIM - codebase\\data\\UnitConeTint.xml"
+			],
+			[
+				"html",
+				"obj to xml\\convert.html"
+			],
+			[
+				"multfra",
+				"GRIM - codebase\\data\\ColorMultUniform.frag"
+			],
+			[
+				"colorfra",
+				"GRIM - codebase\\data\\ColorUniform.frag"
+			],
+			[
+				"objects",
+				"GRIM - codebase\\objects.h"
+			],
+			[
+				"programs",
+				"GRIM - codebase\\programs.h"
+			],
+			[
+				"mesh",
+				"framework\\Mesh.cpp"
+			],
+			[
 				"world",
 				"GRIM - codebase\\World Scene.cpp"
 			],
 			[
 				"coloruniform",
 				"GRIM - codebase\\data\\ColorUniform.frag"
-			],
-			[
-				"obje",
-				"GRIM - codebase\\objects.h"
 			],
 			[
 				"loader",

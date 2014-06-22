@@ -29,7 +29,7 @@
 		this.y = y;
 		this.z = z;
 
-		precision = 5;
+		precision = 6;
 
 		round = function(number, precision){
 			return Math.round(number*Math.pow(10, precision))/Math.pow(10, precision);
@@ -66,7 +66,7 @@
 		
 	}
 
-	function readFaceFromLine(line){
+	function readIndecesFromFaceFromLine(line){
 		var found = getNumbers(line);
 		var jump = found.length/3;
 		var arr = [];
@@ -79,43 +79,122 @@
 		return new vertex(x, y, z);
 	}
 
+	function readNormalsFromFaceLine(line){
+		var found = getNumbers(line);
+		var jump = found.length/3;
+		var arr=[];
+		for(var i=1; i<=3; i++){
+			arr.push(found[i*jump-1]);
+		}
+		x = arr[0];
+		y = arr[1];
+		z = arr[2];
+		return new vertex(x, y, z);
+	}
+
+	function indexesManager(vertices, normals){
+		this.pairCollection = [];
+
+		/*this.vertices = vertices;
+		this.normals = normals*/
+		var total = 0;
+
+		this.getPairIndex = function(vertex_index, normal_index){
+			var index = vertex_index+"/"+normal_index;
+			if(this.pairCollection[index]==undefined){
+				this.pairCollection[index] = total;
+				total++;
+				return total-1;
+			}else{
+				return this.pairCollection[index];
+			}
+		}
+
+		this.getNewVertices = function(){
+			var ret ={
+				vertices:[],
+				normals:[]
+			}
+			for(var i in this.pairCollection){
+				var indexes = i.split("/");
+				var vertex_index = indexes[0];
+				var normal_index = indexes[1];
+				ret.vertices.push(vertices[vertex_index-1]);
+				ret.normals.push(normals[normal_index-1]);
+			}
+			return ret;
+		}
+	}
+
 	function convert(){
 		var vertices = [];
 		var texture_coordinates = [];
 		var normals = [];
-		var faces = [];
+		var vertex_indexes = [];
+		var normal_indexes = [];
 		var lines = getLinesFromTA("to_convert");
 		for(var i in lines){
 			var line = lines[i];
 			if(line[0]=="v"){
-				vertices.push(readVertexFromline(line));
+				if(line[1]=="n"){
+					normals.push(readVertexFromline(line));
+				}else{
+					vertices.push(readVertexFromline(line));					
+				}
 			}else if(line[0]=="f"){
-				faces.push(readFaceFromLine(line));
+				vertex_indexes.push(readIndecesFromFaceFromLine(line));
+				normal_indexes.push(readNormalsFromFaceLine(line));
 			}
 		}
-		$("#converted")[0].value = generateXML(vertices, faces);
+		var new_faces = [];
+		var pairs = new indexesManager(vertices, normals);
+		for(var i in vertex_indexes){
+			/*vert1 = vertices[vertex_indexes[i].x];
+			vert2 = vertices[vertex_indexes[i].y];
+			vert3 = vertices[vertex_indexes[i].z];
+			normal1 = normals[normal_indexes[i].x];
+			normal2 = normals[normal_indexes[i].y];
+			normal3 = normals[normal_indexes[i].z];
+			*/
+			face1 = pairs.getPairIndex(vertex_indexes[i].x, normal_indexes[i].x);
+			face2 = pairs.getPairIndex(vertex_indexes[i].y, normal_indexes[i].y);
+			face3 = pairs.getPairIndex(vertex_indexes[i].z, normal_indexes[i].z);
+			face = new vertex(face1, face2, face3);
+			new_faces.push(face);
+		}
+		var data = pairs.getNewVertices();
+		new_vertices = data.vertices;
+		new_normals = data.normals;
+		$("#converted")[0].value = generateXML(new_vertices, new_normals, new_faces);
+		console.log("vertices:", new_vertices.length, "normals:", new_normals.length, "faces:", new_faces.length);
 	}
 
 
 
-	function generateXML(vertices, faces){
+	function generateXML(vertices, normals, faces){
 		var out = '<?xml version="1.0" encoding="UTF-8"?>'+
 					'<?oxygen RNGSchema="../../Documents/meshFormat.rnc" type="compact"?>'+
 					'<mesh xmlns="http://www.arcsynthesis.com/gltut/mesh" >'+
-					'<attribute index="0" type="float" size="3" > ';
+					'<attribute index="0" type="float" size="3" > \n';
 		for(var i in vertices){
 			vertex = vertices[i];
+			//console.log(i);
 			out+=vertex.print();
 		}
 		out+='</attribute>';
-		out+='<attribute index="1" type="float" size="4" >';
+		out+='<attribute index="1" type="float" size="4" >\n';
 		var color_vertex = new color(1.0, 1, 1);
 		for(var i=0; i<vertices.length; i++){
-			vertex = vertices[i];
 			out+=color_vertex.print();
 		}
 		out+='</attributes>';
-		out+='<indices cmd="triangles" type="ushort">';
+		out+='<attribute index="2" type="float" size="3" >\n';
+		for(var i in normals){
+			normal = normals[i];
+			out+=normal.print();
+		}
+		out+='</attributes>';
+		out+='<indices cmd="triangles" type="ushort">\n';
 		for(var i in faces){
 			face = faces[i];
 			out+=face.print();
