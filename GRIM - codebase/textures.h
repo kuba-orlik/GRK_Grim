@@ -21,6 +21,7 @@
  GLuint loadTexture(const string filename, int &width, int &height) 
  {
    //header for testing if it is a png
+	 printf(" %s..", filename);
    png_byte header[8];
  
    //open file as binary
@@ -135,8 +136,14 @@
    delete[] image_data;
    delete[] row_pointers;
    fclose(fp);
- 
+	printf("OK!\n");
    return texture;
  }
 
- 
+ GLuint sky_texture;
+
+ void loadTextures(){
+	 printf("Loading textures...");
+	 int width, height;
+	 sky_texture = loadTexture("sky2.png", width, height);
+ }
