@@ -467,6 +467,7 @@ namespace Framework
 	Mesh::Mesh( const std::string &strFilename )
 		: m_pData(new MeshData)
 	{
+		printf("  %s...", strFilename.c_str());
 		std::vector<Attribute> attribs;
 		attribs.reserve(16);
 		std::map<GLuint, int> attribIndexMap;	//Maps from attribute indices to 'attribs' indices.
@@ -660,6 +661,7 @@ namespace Framework
 			}
 
 			glBindVertexArray(0);
+			printf("OK!\n");
 		}
 	}
 

@@ -410,6 +410,7 @@ void objects_draw(){
 
 
 void loadObjects(){
+	printf("Loading objects...\n");
 	g_pConeMesh = new Framework::Mesh("UnitConeTint.xml");
 	g_pCylinderMesh = new Framework::Mesh("UnitCylinderTint.xml");
 	g_pCubeTintMesh = new Framework::Mesh("UnitCubeTint.xml");

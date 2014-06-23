@@ -32,6 +32,7 @@ using namespace std;
 //Called after the window and OpenGL are initialized. Called exactly once, before the main loop.
 void init()
 {
+	printf("initializing program...\n");
 	InitializeProgram();
 	
 	try

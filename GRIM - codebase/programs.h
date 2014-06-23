@@ -17,9 +17,12 @@ ProgramData UniformColorTint;
 ProgramData LoadProgram(const std::string &strVertexShader, const std::string &strFragmentShader)
 {
 	std::vector<GLuint> shaderList;
-
+	printf("  %s...", strVertexShader.c_str());
 	shaderList.push_back(Framework::LoadShader(GL_VERTEX_SHADER, strVertexShader));
+	printf("OK!\n");
+	printf("  %s...", strFragmentShader.c_str());
 	shaderList.push_back(Framework::LoadShader(GL_FRAGMENT_SHADER, strFragmentShader));
+	printf("OK!\n");
 
 	ProgramData data;
 	data.theProgram = Framework::CreateProgram(shaderList);
@@ -33,11 +36,14 @@ ProgramData LoadProgram(const std::string &strVertexShader, const std::string &s
 
 void InitializeProgram()
 {
+	printf("Loading shaders...\n");
 	UniformColor = LoadProgram("PosOnlyWorldTransform.vert", "ColorUniform.frag");
 	ObjectColor = LoadProgram("PosColorWorldTransform.vert", "ColorPassthrough.frag");
 	UniformColorTint = LoadProgram("PosColorWorldTransform.vert", "ColorMultUniform.frag");
+	printf("Setting up lightning uniforms...");
 	moon_glow_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "glow_ratio");
 	moon_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "moon_light_intensity");
+	printf("OK!\n");
 }
 
 void setupShaderData(int w, int h){
