@@ -36,6 +36,8 @@ void InitializeProgram()
 	UniformColor = LoadProgram("PosOnlyWorldTransform.vert", "ColorUniform.frag");
 	ObjectColor = LoadProgram("PosColorWorldTransform.vert", "ColorPassthrough.frag");
 	UniformColorTint = LoadProgram("PosColorWorldTransform.vert", "ColorMultUniform.frag");
+	moon_glow_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "glow_ratio");
+	moon_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "moon_light_intensity");
 }
 
 void setupShaderData(int w, int h){
@@ -50,3 +52,4 @@ void setupShaderData(int w, int h){
 	glUniformMatrix4fv(UniformColorTint.cameraToClipMatrixUnif, 1, GL_FALSE, glm::value_ptr(persMatrix.Top()));
 	glUseProgram(0);
 }
+

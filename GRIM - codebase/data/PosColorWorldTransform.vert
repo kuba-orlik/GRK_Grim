@@ -10,6 +10,9 @@ uniform mat4 cameraToClipMatrix;
 uniform mat4 worldToCameraMatrix;
 uniform mat4 modelToWorldMatrix;
 
+uniform float glow_ratio;
+uniform float moon_light_intensity;
+
 void main()
 {
 	vec4 temp = modelToWorldMatrix * position;
@@ -17,7 +20,7 @@ void main()
 	gl_Position = cameraToClipMatrix * temp;
 
 
-	vec4 light_direction = vec4(1.0, 1.0, 1.0, 1.0);
+	vec4 light_direction = vec4(1.0, 0.0, 1.0, 1.0);
 	vec4 light_intensity = vec4(0.2, 0.2, 0.2, 0.2);
 
 	mat4 finalMatrix4 = worldToCameraMatrix * modelToWorldMatrix;
@@ -29,6 +32,8 @@ void main()
 	vec3 normCamSpace = normalize(finalMatrix3 * vec3(normal.x, normal.y, normal.z));
 	vec3 lightDirCamSpace = normalize(finalMatrix3 * vec3(light_direction.x, light_direction.y, light_direction.z));
 	float cosAngIncidence = dot(normCamSpace, lightDirCamSpace);
-	//cosAngIncidence = clamp(cosAngIncidence, 0, 1);
-	interpColor = color* cosAngIncidence;
+	cosAngIncidence  = cosAngIncidence * (1-glow_ratio)+glow_ratio;
+	cosAngIncidence = clamp(cosAngIncidence, 0, 1);
+	interpColor = color * cosAngIncidence * moon_light_intensity;
+	//interpColor = normal;
 }

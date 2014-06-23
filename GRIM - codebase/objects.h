@@ -340,8 +340,15 @@ void DrawForest(glutil::MatrixStack &modelMatrix)
 	}
 }
 
+void setLight(){
+	glUniform1f(moon_glow_ratio_uniform, moon_glow_ratio_value);	
+	glUniform1f(moon_light_intensity_uniform, moon_light_intensity_value);	
+}
+
 void objects_draw(){
 	const glm::vec3 &camPos = ResolveCamPosition();
+
+	setLight();
 
 	glutil::MatrixStack camMatrix;
 	camMatrix.SetMatrix(CalcLookAtMatrix(camPos, g_camTarget, glm::vec3(0.0f, 1.0f, 0.0f)));
@@ -364,6 +371,7 @@ void objects_draw(){
 			modelMatrix.Scale(glm::vec3(100.0f, 100.0f, 100.0f));
 
 			glUseProgram(UniformColorTint.theProgram);
+			setLight();
 			glUniformMatrix4fv(UniformColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
 			glUniform4f(UniformColor.baseColorUnif, 0.302f, 0.416f, 0.0589f, 1.0f);
 			g_pPlaneMesh->Render();
@@ -423,3 +431,4 @@ void objects_delete(){
 	delete g_pPlaneMesh;
 	g_pPlaneMesh = NULL;
 }
+

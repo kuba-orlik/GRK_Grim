@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="data">
-      <UniqueIdentifier>{F80E228E-3876-B54B-A792-011694B58FC9}</UniqueIdentifier>
+      <UniqueIdentifier>{E33F6C67-15EC-AD49-A77A-69A10960859F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -26,6 +26,6 @@
     <ClCompile Include="World Scene.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="objects.h" />
+    <ClInclude Include="textures.h" />
   </ItemGroup>
 </Project>

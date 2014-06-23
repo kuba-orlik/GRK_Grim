@@ -15,11 +15,17 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+GLuint moon_glow_ratio_uniform;
+float moon_glow_ratio_value = 0.3f;
+GLuint moon_light_intensity_uniform;
+float moon_light_intensity_value = 1.5f;
+
 #include "programs.h"
 #include "camera.h"
+#include "textures.h"
 #include "objects.h"
 
-
+using namespace std;
 
 #define ARRAY_COUNT( array ) (sizeof( array ) / (sizeof( array[0] ) * (sizeof( array ) != sizeof(void*) || sizeof( array[0] ) <= sizeof(void*))))
 
@@ -27,7 +33,7 @@
 void init()
 {
 	InitializeProgram();
-
+	
 	try
 	{
 		loadObjects();
@@ -89,6 +95,18 @@ void keyboard(unsigned char key, int x, int y)
 		g_bDrawLookatPoint = !g_bDrawLookatPoint;
 		printf("Target: %f, %f, %f\n", g_camTarget.x, g_camTarget.y, g_camTarget.z);
 		printf("Position: %f, %f, %f\n", g_sphereCamRelPos.x, g_sphereCamRelPos.y, g_sphereCamRelPos.z);
+	}else if(key=='z'){
+		moon_glow_ratio_value+=0.05f;
+		printf("%f", moon_glow_ratio_value);
+	}else if(key=='x'){
+		moon_glow_ratio_value-=0.05f;
+		printf("%f", moon_glow_ratio_value);
+	}else if(key=='c'){
+		moon_light_intensity_value+=0.05f;
+		printf("%f", moon_light_intensity_value);
+	}else if(key=='v'){
+		moon_light_intensity_value-=0.05f;
+		printf("%f", moon_light_intensity_value);
 	}else{
 		camera_control(key);
 	}
