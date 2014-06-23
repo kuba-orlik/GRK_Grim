@@ -1,0 +1,292 @@
+<html>
+	<head>
+		<title>
+			OBJ to xml converter
+		</title>
+	</head>
+	<body>
+	<textarea id="to_convert" rows="30" cols="80"></textarea>
+	<textarea id="converted" rows="30" cols="80"></textarea>
+	<br>
+	<button onClick="convert()">
+		convert!
+	</button>
+	</body>
+	<script>
+	function $(selector){
+		return document.querySelectorAll(selector);
+	} 
+	function getLines(str){
+		return str.split("\n");
+	}
+
+	function getLinesFromTA(id){
+		return getLines($("#"+id)[0].value);
+	}
+
+	function vertex(x, y, z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		precision = 6;
+
+		round = function(number, precision){
+			return Math.round(number*Math.pow(10, precision))/Math.pow(10, precision);
+		}
+
+		this.print = function(){
+			return round(this.x, precision) + " " + round(this.y, precision) + " " + round(this.z, precision) + "\n";
+		}
+	}
+
+
+	function uv(x, y, z){
+		this.x = x;
+		this.y = y;
+
+		precision = 6;
+
+		round = function(number, precision){
+			return Math.round(number*Math.pow(10, precision))/Math.pow(10, precision);
+		}
+
+		this.print = function(){
+			return round(this.x, precision) + " " + round(this.y, precision)  + "\n";
+		}
+	}
+
+	function color(x, y, z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+
+		this.print = function(){
+			return this.x + " " + this.y + " " + this.z + " 1 \n";
+		}
+	}
+
+	function readVertexFromline(line){
+		var found = getNumbers(line);
+		//console.log(found);
+		x = found[0];
+		y = found[1];
+		z = found[2];
+		return new vertex(x, y, z);
+	}
+
+	function readUVFromLine(line){
+		var found = getNumbers(line);
+		//console.log(found);
+		x = found[0];
+		y = found[1];
+		return new uv(x, y);
+	}
+
+	function getNumbers(text){
+		var regex = /(\-?[0-9]+\.?[0-9]*)/g;
+		var found = text.match(regex);	
+		return found;
+		
+	}
+
+	function readIndecesFromFaceFromLine(line){
+		var found = getNumbers(line);
+		var jump = found.length/3;
+		var arr = [];
+		for(var i=0; i<3; i++){
+			arr.push(found[i*jump]);
+		}
+		x = arr[0];
+		y = arr[1];
+		z = arr[2];
+		return new vertex(x, y, z);
+	}
+
+	function readNormalsFromFaceLine(line){
+		var found = getNumbers(line);
+		var jump = found.length/3;
+		var arr=[];
+		for(var i=1; i<=3; i++){
+			arr.push(found[i*jump-1]);
+		}
+		x = arr[0];
+		y = arr[1];
+		z = arr[2];
+		return new vertex(x, y, z);
+	}
+
+	function readUVsFromFaceLine(line){
+		var found = getNumbers(line);
+		var jump = found.length/3;
+		var arr=[];
+		for(var i=1; i<=4; i++){
+			arr.push(found[i*jump-2]);
+		}
+		var x = arr[0];
+		var y = arr[1];
+		var z = arr[2];
+		return new vertex(x, y, z);
+	}
+
+	/*function indexesManager(vertices, normals){
+		this.pairCollection = [];
+
+		this.vertices = vertices;
+		this.normals = normals
+		var total = 0;
+
+		this.getPairIndex = function(vertex_index, normal_index){
+			var index = vertex_index+"/"+normal_index;
+			if(this.pairCollection[index]==undefined){
+				this.pairCollection[index] = total;
+				total++;
+				return total-1;
+			}else{
+				return this.pairCollection[index];
+			}
+		}
+
+		this.getNewVertices = function(){
+			var ret ={
+				vertices:[],
+				normals:[]
+			}
+			for(var i in this.pairCollection){
+				var indexes = i.split("/");
+				var vertex_index = indexes[0];
+				var normal_index = indexes[1];
+				ret.vertices.push(vertices[vertex_index-1]);
+				ret.normals.push(normals[normal_index-1]);
+			}
+			return ret;
+		}
+	}*/
+
+	function indexesManagerUV(vertices, normals, uvs){
+		this.pairCollection = [];
+
+		/*this.vertices = vertices;
+		this.normals = normals*/
+		var total = 0;
+
+		this.getPairIndex = function(vertex_index, normal_index, uv_index){
+			var index = vertex_index+"/"+normal_index+"/"+uv_index;
+			if(this.pairCollection[index]==undefined){
+				this.pairCollection[index] = total;
+				total++;
+				return total-1;
+			}else{
+				return this.pairCollection[index];
+			}
+		}
+
+		this.getNewVertices = function(){
+			var ret ={
+				vertices:[],
+				normals:[],
+				uvs: []
+			}
+			for(var i in this.pairCollection){
+				var indexes = i.split("/");
+				var vertex_index = indexes[0];
+				var normal_index = indexes[1];
+				var uv_index = indexes[2];
+				ret.vertices.push(vertices[vertex_index-1]);
+				ret.normals.push(normals[normal_index-1]);
+				ret.uvs.push(uvs[uv_index-1]);
+			}
+			return ret;
+		}
+	}
+
+	function convert(){
+		var vertices = [];
+		var texture_coordinates = [];
+		var normals = [];
+		var uvs = [];
+		var vertex_indexes = [];
+		var normal_indexes = [];
+		var uv_indexes = [];
+		var lines = getLinesFromTA("to_convert");
+		for(var i in lines){
+			var line = lines[i];
+			if(line[0]=="v"){
+				if(line[1]=="n"){
+					normals.push(readVertexFromline(line));
+				}else if(line[1]=="t"){
+					uvs.push(readUVFromLine(line));
+				}else{
+					vertices.push(readVertexFromline(line));					
+				}
+			}else if(line[0]=="f"){
+				vertex_indexes.push(readIndecesFromFaceFromLine(line));
+				normal_indexes.push(readNormalsFromFaceLine(line));
+				uv_indexes.push(readUVsFromFaceLine(line));
+			}
+		}
+		var new_faces = [];
+		var pairs = new indexesManagerUV(vertices, normals, uvs);
+		for(var i in vertex_indexes){
+			/*vert1 = vertices[vertex_indexes[i].x];
+			vert2 = vertices[vertex_indexes[i].y];
+			vert3 = vertices[vertex_indexes[i].z];
+			normal1 = normals[normal_indexes[i].x];
+			normal2 = normals[normal_indexes[i].y];
+			normal3 = normals[normal_indexes[i].z];
+			*/
+			face1 = pairs.getPairIndex(vertex_indexes[i].x, normal_indexes[i].x, uv_indexes[i].x);
+			face2 = pairs.getPairIndex(vertex_indexes[i].y, normal_indexes[i].y, uv_indexes[i].y);
+			face3 = pairs.getPairIndex(vertex_indexes[i].z, normal_indexes[i].z, uv_indexes[i].z);
+			face = new vertex(face1, face2, face3);
+			new_faces.push(face);
+		}
+		var data = pairs.getNewVertices();
+		new_vertices = data.vertices;
+		new_normals = data.normals;
+		new_uvs = data.uvs;
+		$("#converted")[0].value = generateXML(new_vertices, new_normals, new_uvs, new_faces);
+		console.log("vertices:", new_vertices.length, "normals:", new_normals.length, "faces:", new_faces.length);
+	}
+
+
+
+	function generateXML(vertices, normals, uvs, faces){
+		var out = '<?xml version="1.0" encoding="UTF-8"?>'+
+					'<?oxygen RNGSchema="../../Documents/meshFormat.rnc" type="compact"?>'+
+					'<mesh xmlns="http://www.arcsynthesis.com/gltut/mesh" >'+
+					'<attribute index="0" type="float" size="3" > \n';
+		for(var i in vertices){
+			vertex = vertices[i];
+			//console.log(i);
+			out+=vertex.print();
+		}
+		out+='</attribute>';
+		out+='<attribute index="1" type="float" size="4" >\n';
+		var color_vertex = new color(1.0, 1, 1);
+		for(var i=0; i<vertices.length; i++){
+			out+=color_vertex.print();
+		}
+		out+='</attributes>';
+		out+='<attribute index="2" type="float" size="3" >\n';
+		for(var i in normals){
+			normal = normals[i];
+			out+=normal.print();
+		}
+		out+='</attributes>';
+		out+='<attribute index="3" type="float" size="2" >\n';
+		for(var i in uvs){
+			var uv = uvs[i];
+			out+=uv.print();
+		}
+		out+='</attributes>';
+		out+='<indices cmd="triangles" type="ushort">\n';
+		for(var i in faces){
+			face = faces[i];
+			out+=face.print();
+		}	
+		out+='</indices></mesh>';
+		return out;
+	}
+	</script>
+</html>
