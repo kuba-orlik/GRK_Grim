@@ -13,6 +13,7 @@ float g_fzFar = 1000.0f;
 ProgramData UniformColor;
 ProgramData ObjectColor;
 ProgramData UniformColorTint;
+ProgramData SkyProgram;
 
 ProgramData LoadProgram(const std::string &strVertexShader, const std::string &strFragmentShader)
 {
@@ -40,7 +41,9 @@ void InitializeProgram()
 	UniformColor = LoadProgram("PosOnlyWorldTransform.vert", "ColorUniform.frag");
 	ObjectColor = LoadProgram("PosColorWorldTransform.vert", "ColorPassthrough.frag");
 	UniformColorTint = LoadProgram("PosColorWorldTransform.vert", "ColorMultUniform.frag");
+	SkyProgram = LoadProgram("sky.vert", "sky.frag");
 	printf("Setting up lightning uniforms...");
+	sky_matrix_uniform = glGetUniformLocation(SkyProgram.theProgram, "sky_matrix");
 	moon_glow_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "glow_ratio");
 	moon_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "moon_light_intensity");
 	printf("OK!\n");

@@ -24,7 +24,7 @@ glm::mat4 CalcLookAtMatrix(const glm::vec3 &cameraPt, const glm::vec3 &lookPt, c
 
 
 //In spherical coordinates.
-static glm::vec3 g_sphereCamRelPos(67.5f, -46.0f, 150.0f);
+static glm::vec3 g_sphereCamRelPos(-157.5f, -1.0f, 85.0f);
 
 glm::vec3 ResolveCamPosition()
 {
@@ -61,11 +61,11 @@ void camera_control(unsigned char key){
 	case 'E': g_camTarget.y -= 0.4f; break;
 	case 'Q': g_camTarget.y += 0.4f; break;
 	case 'i': g_sphereCamRelPos.y -= 11.25f; break;
-	case 'k': g_sphereCamRelPos.y += 11.25f; break;
-	case 'j': g_sphereCamRelPos.x -= 11.25f; break;
+	case 'k': g_sphereCamRelPos.y += 11.25f;  break;
+	case 'j': g_sphereCamRelPos.x -= 11.25f; printf("\ng_sphereCamRelPos.x: %f\n\n", g_sphereCamRelPos.x); break;
 	case 'l': g_sphereCamRelPos.x += 11.25f; break;
-	case 'o': g_sphereCamRelPos.z -= 5.0f; break;
-	case 'u': g_sphereCamRelPos.z += 5.0f; break;
+	case 'o': g_sphereCamRelPos.z -= 5.0f; printf("\ng_sphereCamRelPos.z: %f\n\n", g_sphereCamRelPos.z); break;
+	case 'u': g_sphereCamRelPos.z += 5.0f; printf("\ng_sphereCamRelPos.z: %f\n\n", g_sphereCamRelPos.z); break;
 	case 'I': g_sphereCamRelPos.y -= 1.125f; break;
 	case 'K': g_sphereCamRelPos.y += 1.125f; break;
 	case 'J': g_sphereCamRelPos.x -= 1.125f; break;

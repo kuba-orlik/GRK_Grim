@@ -3,8 +3,10 @@
 layout(location = 0) in vec4 position;
 layout(location = 1) in vec4 color;
 layout(location = 2) in vec4 normal;
+layout(location = 3) in vec2 vertex_uv;
 
 smooth out vec4 interpColor;
+out vec2 uv;
 
 uniform mat4 cameraToClipMatrix;
 uniform mat4 worldToCameraMatrix;
@@ -21,7 +23,7 @@ void main()
 
 
 	vec4 light_direction = vec4(1.0, 0.0, 1.0, 1.0);
-	vec4 light_intensity = vec4(0.2, 0.2, 0.2, 0.2);
+	vec4 moon_light_color = vec4(0.7, 0.7, 1.0, 1.0);
 
 	mat4 finalMatrix4 = worldToCameraMatrix * modelToWorldMatrix;
 	mat3 finalMatrix3;
@@ -34,6 +36,7 @@ void main()
 	float cosAngIncidence = dot(normCamSpace, lightDirCamSpace);
 	cosAngIncidence  = cosAngIncidence * (1-glow_ratio)+glow_ratio;
 	cosAngIncidence = clamp(cosAngIncidence, 0, 1);
-	interpColor = color * cosAngIncidence * moon_light_intensity;
+	interpColor = moon_light_color * color * cosAngIncidence * moon_light_intensity;
+	uv=vertex_uv;
 	//interpColor = normal;
 }

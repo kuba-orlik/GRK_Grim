@@ -28,5 +28,6 @@
   <ItemGroup>
     <ClInclude Include="textures.h" />
     <ClInclude Include="objects.h" />
+    <ClInclude Include="camera.h" />
   </ItemGroup>
 </Project>

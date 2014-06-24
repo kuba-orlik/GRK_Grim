@@ -18,7 +18,11 @@
 GLuint moon_glow_ratio_uniform;
 float moon_glow_ratio_value = 0.3f;
 GLuint moon_light_intensity_uniform;
-float moon_light_intensity_value = 1.5f;
+float moon_light_intensity_value=1.7f;
+GLuint sky_matrix_uniform;
+int window_width;
+int window_height;
+double parameter_w, parameter_a, parameter_s, parameter_d, parameter_q, parameter_e = 0.0;
 
 #include "programs.h"
 #include "camera.h"
@@ -77,6 +81,8 @@ void display()
 //This is an opportunity to call glViewport or glScissor to keep up with the change in size.
 void reshape (int w, int h)
 {
+	window_height=h;
+	window_width=w;
 	setupShaderData(w, h);
 
 	glViewport(0, 0, (GLsizei) w, (GLsizei) h);
@@ -108,6 +114,8 @@ void keyboard(unsigned char key, int x, int y)
 	}else if(key=='v'){
 		moon_light_intensity_value-=0.05f;
 		printf("%f", moon_light_intensity_value);
+	}else if(key=='1'){
+
 	}else{
 		camera_control(key);
 	}

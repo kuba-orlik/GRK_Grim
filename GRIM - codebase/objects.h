@@ -1,8 +1,5 @@
-Framework::Mesh *g_pConeMesh = NULL;
-Framework::Mesh *g_pCylinderMesh = NULL;
-Framework::Mesh *g_pCubeTintMesh = NULL;
-Framework::Mesh *g_pCubeColorMesh = NULL;
-Framework::Mesh *g_pPlaneMesh = NULL;
+Framework::Mesh *sky_mesh = NULL;
+Framework::Mesh *hill_mesh = NULL;
 
 //Trees are 3x3 in X/Z, and fTrunkHeight+fConeHeight in the Y.
 
@@ -134,7 +131,7 @@ static const TreeData g_forest[] =
 	{25.0f, 45.0f, 2.0f, 3.0f},
 };
 
-void DrawTree(glutil::MatrixStack &modelMatrix, float fTrunkHeight = 2.0f, float fConeHeight = 3.0f)
+/*void DrawTree(glutil::MatrixStack &modelMatrix, float fTrunkHeight = 2.0f, float fConeHeight = 3.0f)
 {
 	//Draw trunk.
 	{
@@ -163,56 +160,44 @@ void DrawTree(glutil::MatrixStack &modelMatrix, float fTrunkHeight = 2.0f, float
 		g_pConeMesh->Render();
 		glUseProgram(0);
 	}
+}*/
+
+void DrawSky(){
+
+	glutil::MatrixStack modelMatrix;
+	glutil::PushStack push(modelMatrix);
+	int sky_width = 2560;
+	int sky_height = 1600;
+	double scale_x=1;
+	double scale_y=1;
+	double unit;
+	/*if(window_width<window_height){
+		scale_x = (double)window_height/(double)window_width;
+	}else{
+		scale_y = (double)window_width/(double)window_height;
+	}*/
+	double window_proportion = (double)window_height/(double)window_width;
+	double sky_proportion = (double)sky_height/(double)sky_width;
+	printf("sky_proportion: %f, window_proportion: %f", sky_proportion, window_proportion);
+	if(window_proportion<sky_proportion){
+		scale_y=sky_proportion/window_proportion;
+	}else{
+		scale_x=window_proportion/sky_proportion;
+	}
+	printf("scale_x: %f\n", scale_x);
+	modelMatrix.Scale(glm::vec3(scale_x, scale_y, 1.0f));
+	modelMatrix.Translate(glm::vec3(0, 0, 50));
+	//modelMatrix.RotateZ(3.1415);
+
+	glUseProgram(SkyProgram.theProgram);
+	glUniformMatrix4fv(sky_matrix_uniform, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
+	use_texture(sky_texture);
+	sky_mesh->Render();
+	glUseProgram(0);	
 }
 
-void DrawColumn(glutil::MatrixStack &modelMatrix, float fHeight = 5.0f)
-{
-	//Draw the bottom of the column.
-	{
-		glutil::PushStack push(modelMatrix);
 
-		modelMatrix.Scale(glm::vec3(1.0f, g_fColumnBaseHeight, 1.0f));
-		modelMatrix.Translate(glm::vec3(0.0f, 0.5f, 0.0f));
-
-		glUseProgram(UniformColorTint.theProgram);
-		glUniformMatrix4fv(UniformColorTint.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-		glUniform4f(UniformColorTint.baseColorUnif, 1.0f, 1.0f, 1.0f, 1.0f);
-		g_pCubeTintMesh->Render();
-		glUseProgram(0);
-	}
-
-	//Draw the top of the column.
-	{
-		glutil::PushStack push(modelMatrix);
-
-		modelMatrix.Translate(glm::vec3(0.0f, fHeight - g_fColumnBaseHeight, 0.0f));
-		modelMatrix.Scale(glm::vec3(1.0f, g_fColumnBaseHeight, 1.0f));
-		modelMatrix.Translate(glm::vec3(0.0f, 0.5f, 0.0f));
-
-		glUseProgram(UniformColorTint.theProgram);
-		glUniformMatrix4fv(UniformColorTint.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-		glUniform4f(UniformColorTint.baseColorUnif, 0.9f, 0.9f, 0.9f, 0.9f);
-		g_pCubeTintMesh->Render();
-		glUseProgram(0);
-	}
-
-	//Draw the main column.
-	{
-		glutil::PushStack push(modelMatrix);
-
-		modelMatrix.Translate(glm::vec3(0.0f, g_fColumnBaseHeight, 0.0f));
-		modelMatrix.Scale(glm::vec3(0.8f, fHeight - (g_fColumnBaseHeight * 2.0f), 0.8f));
-		modelMatrix.Translate(glm::vec3(0.0f, 0.5f, 0.0f));
-
-		glUseProgram(UniformColorTint.theProgram);
-		glUniformMatrix4fv(UniformColorTint.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-		glUniform4f(UniformColorTint.baseColorUnif, 0.9f, 0.9f, 0.9f, 0.9f);
-		g_pCylinderMesh->Render();
-		glUseProgram(0);
-	}
-}
-
-void DrawParthenon(glutil::MatrixStack &modelMatrix)
+/*void DrawParthenon(glutil::MatrixStack &modelMatrix)
 {
 	//Draw base.
 	{
@@ -224,7 +209,7 @@ void DrawParthenon(glutil::MatrixStack &modelMatrix)
 		glUseProgram(UniformColorTint.theProgram);
 		glUniformMatrix4fv(UniformColorTint.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
 		glUniform4f(UniformColorTint.baseColorUnif, 0.9f, 0.9f, 0.9f, 0.9f);
-		g_pCubeTintMesh->Render();
+		sky_mesh->Render();
 		glUseProgram(0);
 	}
 
@@ -239,7 +224,7 @@ void DrawParthenon(glutil::MatrixStack &modelMatrix)
 		glUseProgram(UniformColorTint.theProgram);
 		glUniformMatrix4fv(UniformColorTint.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
 		glUniform4f(UniformColorTint.baseColorUnif, 0.9f, 0.9f, 0.9f, 0.9f);
-		g_pCubeTintMesh->Render();
+		sky_mesh->Render();
 		glUseProgram(0);
 	}
 
@@ -316,7 +301,7 @@ void DrawParthenon(glutil::MatrixStack &modelMatrix)
 		glUseProgram(0);
 	}
 }
-
+*/
 //Columns are 1x1 in the X/Z, and fHieght units in the Y.
 
 
@@ -325,10 +310,10 @@ void DrawParthenon(glutil::MatrixStack &modelMatrix)
 
 
 bool objects_are_loaded(){
-	return g_pConeMesh && g_pCylinderMesh && g_pCubeTintMesh && g_pCubeColorMesh && g_pPlaneMesh;
+	return sky_mesh && hill_mesh;
 }
 
-void DrawForest(glutil::MatrixStack &modelMatrix)
+/*void DrawForest(glutil::MatrixStack &modelMatrix)
 {
 	for(int iTree = 0; iTree < ARRAY_COUNT(g_forest); iTree++)
 	{
@@ -338,7 +323,7 @@ void DrawForest(glutil::MatrixStack &modelMatrix)
 		modelMatrix.Translate(glm::vec3(currTree.fXPos, 0.0f, currTree.fZPos));
 		DrawTree(modelMatrix, currTree.fTrunkHeight, currTree.fConeHeight);
 	}
-}
+}*/
 
 void setLight(){
 	glUniform1f(moon_glow_ratio_uniform, moon_glow_ratio_value);	
@@ -374,62 +359,30 @@ void objects_draw(){
 			setLight();
 			glUniformMatrix4fv(UniformColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
 			glUniform4f(UniformColor.baseColorUnif, 0.302f, 0.416f, 0.0589f, 1.0f);
-			g_pPlaneMesh->Render();
+			use_texture(noise_texture);
+			hill_mesh->Render();
 			glUseProgram(0);
 		}
 
 		//Draw the trees
-		DrawForest(modelMatrix);
-
-		//Draw the building.
-		{
-			glutil::PushStack push(modelMatrix);
-			modelMatrix.Translate(glm::vec3(20.0f, 0.0f, -10.0f));
-
-			DrawParthenon(modelMatrix);
-		}
-		if(g_bDrawLookatPoint)
-		{
-			glDisable(GL_DEPTH_TEST);
-			glm::mat4 idenity(1.0f);
-
-			glutil::PushStack push(modelMatrix);
-
-			glm::vec3 cameraAimVec = g_camTarget - camPos;
-			modelMatrix.Translate(0.0f, 0.0, -glm::length(cameraAimVec));
-			modelMatrix.Scale(1.0f, 1.0f, 1.0f);
-		
-			glUseProgram(ObjectColor.theProgram);
-			glUniformMatrix4fv(ObjectColor.modelToWorldMatrixUnif, 1, GL_FALSE, glm::value_ptr(modelMatrix.Top()));
-			glUniformMatrix4fv(ObjectColor.worldToCameraMatrixUnif, 1, GL_FALSE, glm::value_ptr(idenity));
-			g_pCubeColorMesh->Render();
-			glUseProgram(0);
-			glEnable(GL_DEPTH_TEST);
-		}
+	//	DrawForest(modelMatrix);
+	DrawSky();
 }
 
 
 void loadObjects(){
 	printf("Loading objects...\n");
-	g_pConeMesh = new Framework::Mesh("UnitConeTint.xml");
-	g_pCylinderMesh = new Framework::Mesh("UnitCylinderTint.xml");
-	g_pCubeTintMesh = new Framework::Mesh("UnitCubeTint.xml");
-	g_pCubeColorMesh = new Framework::Mesh("UnitCubeColor.xml");
-	g_pPlaneMesh = new Framework::Mesh("UnitPlane.xml");
+	sky_mesh = new Framework::Mesh("UnitCubeTint.xml");
+	hill_mesh = new Framework::Mesh("UnitPlane.xml");
+	loadTextures();
 }
 
 
 
 void objects_delete(){
-	delete g_pConeMesh;
-	g_pConeMesh = NULL;
-	delete g_pCylinderMesh;
-	g_pCylinderMesh = NULL;
-	delete g_pCubeTintMesh;
-	g_pCubeTintMesh = NULL;
-	delete g_pCubeColorMesh;
-	g_pCubeColorMesh = NULL;
-	delete g_pPlaneMesh;
-	g_pPlaneMesh = NULL;
+	delete sky_mesh;
+	sky_mesh = NULL;
+	delete hill_mesh;
+	hill_mesh = NULL;
 }
 
