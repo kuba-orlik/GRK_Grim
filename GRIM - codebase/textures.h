@@ -62,12 +62,18 @@ struct texture loadTexture( const char * imagepath ){
 
  struct texture sky_texture;
  struct texture noise_texture;
+ struct texture leaves_texture;
+ struct texture falling_leaf_texture;
+ struct texture light_dot_texture;
 
  void loadTextures(){
 	 printf("Loading textures...\n");
 	 int width, height;
-	 sky_texture = loadTexture("texture/sky2.bmp");
+	 sky_texture = loadTexture("texture/sky3_noise.bmp");
 	 noise_texture = loadTexture("texture/noise.bmp");
+	 leaves_texture = loadTexture("texture/leaves.bmp");
+	 light_dot_texture = loadTexture("texture/dot.bmp");
+	 falling_leaf_texture = loadTexture("texture/falling_leaf.bmp");
  }
 
  void use_texture(struct texture t){

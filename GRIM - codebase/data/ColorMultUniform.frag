@@ -10,6 +10,11 @@ uniform sampler2D myTextureSampler;
 void main()
 {
 	//vec2 temp = vec2(0.0, 0.0);
-	outputColor = texture( myTextureSampler, uv ).rgba * interpColor;
+	vec4 texture_color = texture(myTextureSampler, uv);
+	outputColor = texture_color.rgba * interpColor;
+	//outputColor = vec4(outputColor.x, outputColor.y, outputColor.z, 0);
 	//outputColor = interpColor;
+	if(texture_color.x==0 && texture_color.y==0 && texture_color.z==0){
+		discard;
+	}
 }

@@ -46,6 +46,8 @@ void InitializeProgram()
 	sky_matrix_uniform = glGetUniformLocation(SkyProgram.theProgram, "sky_matrix");
 	moon_glow_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "glow_ratio");
 	moon_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "moon_light_intensity");
+	backlight_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "backlight_ratio");
+	frontlight_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "frontlight_ratio");
 	printf("OK!\n");
 }
 
