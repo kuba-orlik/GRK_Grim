@@ -48,6 +48,10 @@ void InitializeProgram()
 	moon_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "moon_light_intensity");
 	backlight_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "backlight_ratio");
 	frontlight_ratio_uniform = glGetUniformLocation(UniformColorTint.theProgram, "frontlight_ratio");
+	the_dot_position_uniform = glGetUniformLocation(UniformColorTint.theProgram, "the_dot_position");
+	the_dot_light_intensity_uniform = glGetUniformLocation(UniformColorTint.theProgram, "dot_light_intensity");
+	observer_location_uniform = glGetUniformLocation(UniformColorTint.theProgram, "observer_location");
+	phong_parameter_uniform = glGetUniformLocation(UniformColorTint.theProgram, "phong_parameter");
 	printf("OK!\n");
 }
 

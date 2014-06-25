@@ -39,7 +39,10 @@ glm::vec3 ResolveCamPosition()
 	float fSinPhi = sinf(phi);
 
 	glm::vec3 dirToCamera(fSinTheta * fCosPhi, fCosTheta, fSinTheta * fSinPhi);
-	return (dirToCamera * g_sphereCamRelPos.z) + g_camTarget;
+	glm::vec3 ret = (dirToCamera * g_sphereCamRelPos.z) + g_camTarget;
+	//printf("\n\n\n\n\n%f\n\n\n\n\n", ret.x);
+	//Sleep(200);
+	return ret;
 }
 
 void camera_control(unsigned char key){
@@ -62,8 +65,8 @@ void camera_control(unsigned char key){
 	case 'Q': g_camTarget.y += 0.4f; break;
 	case 'i': g_sphereCamRelPos.y -= 11.25f; break;
 	case 'k': g_sphereCamRelPos.y += 11.25f;  break;
-	case 'j': g_sphereCamRelPos.x -= 11.25f; printf("\ng_sphereCamRelPos.x: %f\n\n", g_sphereCamRelPos.x); break;
-	case 'l': g_sphereCamRelPos.x += 11.25f; break;
+	case 'j': g_sphereCamRelPos.x -= 2.0f; printf("\ng_sphereCamRelPos.x: %f\n\n", g_sphereCamRelPos.x); break;
+	case 'l': g_sphereCamRelPos.x += 2.0f; break;
 	case 'o': g_sphereCamRelPos.z -= 5.0f; printf("\ng_sphereCamRelPos.z: %f\n\n", g_sphereCamRelPos.z); break;
 	case 'u': g_sphereCamRelPos.z += 5.0f; printf("\ng_sphereCamRelPos.z: %f\n\n", g_sphereCamRelPos.z); break;
 	case 'I': g_sphereCamRelPos.y -= 1.125f; break;

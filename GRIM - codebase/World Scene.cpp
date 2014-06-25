@@ -30,6 +30,10 @@ GLuint backlight_ratio_uniform;
 float backlight_ratio_value = 1.25f;
 GLuint frontlight_ratio_uniform;
 float frontlight_ratio_value = 1.0f;
+GLuint the_dot_position_uniform;
+GLuint the_dot_light_intensity_uniform;
+GLuint observer_location_uniform;
+GLuint phong_parameter_uniform;
 int window_width;
 int window_height;
 double parameter_w, parameter_a, parameter_s, parameter_d, parameter_q, parameter_e = 0.0f;
@@ -160,11 +164,11 @@ void keyboard(unsigned char key, int x, int y)
 		backlight_ratio_value+=0.05f;
 	}else if(key=='2'){
 		backlight_ratio_value-=0.05f;
-	}/*else if(key=='a'){
+	}else if(key=='r'){
 		parameter_a+=1;
-	}else if(key=='A'){
+	}else if(key=='R'){
 		parameter_a-=1;
-	}else if(key=='s'){
+	}/*else if(key=='s'){
 		parameter_s+=1;
 	}else if(key=='S'){
 		parameter_s-=1;

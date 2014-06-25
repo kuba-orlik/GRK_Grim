@@ -13,12 +13,13 @@ const float g_fColumnBaseHeight = 0.25f;
 static bool g_bDrawLookatPoint = false;
 
 
+struct light_dot{
+	glm::vec3 position;
+	glm::vec3 color;
+	float intensity;
+};
 
-const float g_fParthenonWidth = 14.0f;
-const float g_fParthenonLength = 20.0f;
-const float g_fParthenonColumnHeight = 5.0f;
-const float g_fParthenonBaseHeight = 1.0f;
-const float g_fParthenonTopHeight = 2.0f;
+struct light_dot the_dot;
 
 struct falling_leaf{
 	float gravity;
@@ -31,8 +32,8 @@ struct falling_leaf{
 const float falling_leaf_max_ver_coor = 2;
 const float falling_leaf_min_ver_coor = -0.5;
 
-const float falling_leaf_max_hor_coor = 1;
-const float falling_leaf_min_hor_coor = -1;
+const float falling_leaf_max_hor_coor = 2;
+const float falling_leaf_min_hor_coor = 0;
 
 const float falling_leaf_max_x = -1;
 const float falling_leaf_min_x = -50;
@@ -159,6 +160,11 @@ void setLight(){
 	glUniform1f(moon_glow_ratio_uniform, moon_glow_ratio_value);	
 	glUniform1f(moon_light_intensity_uniform, moon_light_intensity_value);	
 	glUniform1f(frontlight_ratio_uniform, frontlight_ratio_value);	
+	glUniform3f(the_dot_position_uniform, the_dot.position.x, the_dot.position.y, the_dot.position.z);	
+	glm::vec3 camera_position = ResolveCamPosition();
+	glUniform3f(observer_location_uniform, camera_position.x, camera_position.y, camera_position.z);	
+	glUniform1f(the_dot_light_intensity_uniform, the_dot.intensity);	
+	glUniform1i(phong_parameter_uniform, 14);
 }
 
 
@@ -323,12 +329,7 @@ void DrawFallingLeaves(){
 	glUseProgram(0);	
 }
 
-struct light_dot{
-	glm::vec3 position;
-	glm::vec3 color;
-};
 
-struct light_dot the_dot;
 
 void DrawDot(){
 	glutil::MatrixStack modelMatrix;
@@ -363,6 +364,9 @@ void dot_control(unsigned char key){
 		case 'a':
 			the_dot.position.z=the_dot.position.z-step;
 			break;	
+		default:
+			camera_control(key);
+			break;
 	}
 }
 
@@ -397,12 +401,13 @@ void objects_draw(){
 void loadObjects(){
 	printf("Loading objects...\n");
 	sky_mesh = new Framework::Mesh("UnitCubeTint.xml");
-	hill_mesh = new Framework::Mesh("UnitPlane.xml");
+	hill_mesh = new Framework::Mesh("hill.xml");
 	leaves_mesh = new Framework::Mesh("leaves.xml");
 	tree_crown_mesh = new Framework::Mesh("crown.xml");
 	tree_trunk_mesh = new Framework::Mesh("trunk.xml");
 	falling_leaf_mesh = new Framework::Mesh("falling_leaf.xml");
 	the_dot.position = glm::vec3(0, -1, 0);
+	the_dot.intensity = 20.0f;
 	loadTextures();
 	generateFallingLeaves();
 }
